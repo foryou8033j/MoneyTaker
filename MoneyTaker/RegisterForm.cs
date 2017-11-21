@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace MoneyTaker
 {
-    public partial class Form1 : Form
+    public partial class RegisterForm : Form
     {
-        public Form1()
+        public RegisterForm()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
