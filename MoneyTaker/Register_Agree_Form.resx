@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>1. 개인정보의 수집 및 이용에 대한 동의
+
+(1) 일반 개인정보의 수집 및 이용에 대한 동의
+
+[필수적 수집 및 이용]
+
+    수집항목 : 성명, 소속 기관명, 부서 및 직함, 전화번호, 휴대전화번호, 전자우편주소, 주소
+    수집 및 이용목적
+        고객사 담당자 정보 확인 및 전산 관리, 계약 체결 여부의 결정
+        거래 관계 설정 및 유지, 계약의 이행, 계약과 관련된 분쟁 및 불만의 처리
+        견적 관리, 마케팅 및 영업 활동 등에 대한 전산관리 
+    보유 및 이용기간: 관계 법령의 규정에 따라 귀하의 개인정보를 보존할 의무가 있는 경우가 아닌 한, 회사는 위의 수집 및 이용 목적을 달성할 때까지 귀하의 개인정보를 보유 및 이용합니다.
+
+귀하는 위와 같은 개인정보의 수집 및 이용을 거부할 수 있습니다. 다만, 개인정보의 필수적 수집 및 이용에 동의하지 않을 경우 회사와의 거래관계 설정 및 유지가 불가능 할 수 있습니다. 
+
+□ 본인은 회사의 일반 개인정보 수집 및 이용에 관한 설명을 모두 이해하였고, 이에 동의합니다.
+
+(2) 정보 전달 및 제품 홍보 등 마케팅 안내 관련 동의
+
+회사가 수집한 상기 개인정보는 상기 보유 및 이용기간 동안 우편(전자우편 포함) 발송, 방문, 전화 등을 통한 제품설명회 등 마케팅, 시장조사 및 회사 제품의 안내를 포함한 제품 정보 전달 및 취득 활동의 수행 등에 이용될 수 있습니다. 이러한 이용에 동의하지 않는 경우 향후 회사의 신제품의 안내, 정보 전달이 이루어지지 않을 수 있습니다. 
+
+□ 제품 정보 전달 및 제품 홍보 등 목적의 개인정보 이용에 동의합니다.  □ 동의하지 않습니다.
+
+
+2. 개인정보의 제3자 제공에 대한 동의
+
+(1) 일반 개인정보의 제3자 제공에 대한 동의
+
+[필수적 제공]
+
+    제공받는 자 (연락처) : Merck KGaA (+49 6151 72 8185)
+    제공받는 자가 소재하는 국가 : 독일
+    제공받는 자의 개인정보 이용목적 : 고객사 담당자 정보 확인 및 전산 관리, 견적 관리, 마케팅 및 영업 활동 등에 대한 전산관리, 분쟁 및 불만 처리 등
+    제공하는 개인정보의 항목 : 성명, 소속 기관명, 부서 및 직함, 전화번호, 휴대전화번호, 전자우편주소, 주소
+    제공받는 자의 개인정보 보유 및 이용기간 : 개인정보 이용목적을 달성할 때까지
+
+귀하는 위와 같은 개인정보의 제3자 제공을 거부할 수 있습니다. 다만, 개인정보의 필수적 제공에 동의하지 않을 경우 회사와의 거래관계 설정 및 유지가 불가능할 수 있으며, 회사 제품의 안내, 제품 정보 전달 등이 이루어지지 않을 수 있습니다. 
+
+□ 본인은 회사의 일반 개인정보의 제3자 제공에 관한 설명을 이해하고, 이에 동의합니다.
+
+    
+
+   
+3. 개인정보의 제3자 취급 위탁에 대한 동의
+
+(1) 일반 개인정보의 제3자 취급 위탁에 대한 동의
+
+[필수적 제공]
+
+    제공받는 자 (연락처) : 와이즈폴 (070-7123-4272)
+    제공받는 자가 소재하는 국가 : 한국
+    제공받는 자의 개인정보 이용목적 : 고객사 담당자 정보 확인 및 전산 관리, 견적 관리, 마케팅 및 영업 활동 등에 대한 전산관리, 분쟁 및 불만 처리 등
+    제공하는 개인정보의 항목 : 성명, 소속 기관명, 부서 및 직함, 전화번호, 휴대전화번호, 전자우편주소, 주소
+    제공받는 자의 개인정보 보유 및 이용기간 : 개인정보 이용목적을 달성할 때까지
+
+귀하는 위와 같은 개인정보의 제3자 취급 위탁을 거부할 수 있습니다. 다만, 개인정보의 필수적 제공에 동의하지 않을 경우 회사와의 거래관계 설정 및 유지가 불가능할 수 있으며, 회사 제품의 안내, 제품 정보 전달 등이 이루어지지 않을 수 있습니다. 
+
+□ 본인은 회사의 일반 개인정보의 제3자 취급 위탁에 관한 설명을 이해하고, 이에 동의합니다.
+
+    
+
+   
+
+회사와의 거래관계 설정 및 유지를 위하여 귀하가 귀하 이외의 다른 사람에 대한 정보를 회사에 제공하는 경우, 귀하는 그에 앞서 정보주체에게 그들의 정보를 회사에 제공한다는 점과 제공 항목, 제공 목적(회사가 이를 다시 제3자에게 제공하는 경우에는 그러한 사항 포함), 회사가 보유 및 이용하는 기간을 충분히 설명하고 이에 대한 동의를 받아야 합니다. 귀하는 이 동의서에 서명하거나 전자적으로 동의함으로써 귀하가 해당 정보주체에게 그와 같은 설명을 제공하고 해당 정보주체로부터 적법한 동의를 받았음을 진술합니다.
+
+본인은 상기 내용을 상세히 읽어 보았고, 이에 관하여 충분히 이해하였으며, 본인의 자유로운 의사에 의해 명확히 동의합니다.</value>
+  </data>
+</root>

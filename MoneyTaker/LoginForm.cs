@@ -11,9 +11,22 @@ namespace MoneyTaker
 {
     public partial class LoginForm : Form
     {
+
+        private RootForm rootForm = null;
+
         public LoginForm()
         {
             InitializeComponent();
+        }
+
+        public void setRootForm(RootForm rootForm)
+        {
+            this.rootForm = rootForm;
+        }
+
+        public RootForm getRootForm()
+        {
+            return rootForm;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,10 +41,23 @@ namespace MoneyTaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //backPanel.ControlAdded = new RegisterForm();
+
+            Register_Agree_Form register_Agree_Form = new Register_Agree_Form();
+            register_Agree_Form.setLoginForm(this);
+            register_Agree_Form.TopLevel = false;
+
+            rootForm.getRootPanel().Controls.Clear();
+            rootForm.getRootPanel().Controls.Add(register_Agree_Form);
+            register_Agree_Form.Show();
+  
         }
 
         private void backPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
         {
 
         }
