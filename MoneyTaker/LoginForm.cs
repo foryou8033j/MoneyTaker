@@ -13,10 +13,13 @@ namespace MoneyTaker
     {
 
         private RootForm rootForm = null;
+        private Register_Agree_Form register_Agree_Form;
+
 
         public LoginForm()
         {
             InitializeComponent();
+            
         }
 
         public void setRootForm(RootForm rootForm)
@@ -41,15 +44,13 @@ namespace MoneyTaker
 
         private void button2_Click(object sender, EventArgs e)
         {
+            rootForm.getRootPanel().Controls.Clear();
 
-            Register_Agree_Form register_Agree_Form = new Register_Agree_Form();
             register_Agree_Form.setLoginForm(this);
             register_Agree_Form.TopLevel = false;
 
-            rootForm.getRootPanel().Controls.Clear();
             rootForm.getRootPanel().Controls.Add(register_Agree_Form);
             register_Agree_Form.Show();
-  
         }
 
         private void backPanel_Paint(object sender, PaintEventArgs e)
@@ -59,7 +60,7 @@ namespace MoneyTaker
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            register_Agree_Form = new Register_Agree_Form();
         }
     }
 }

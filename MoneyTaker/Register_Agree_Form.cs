@@ -36,5 +36,19 @@ namespace MoneyTaker
 
 
         }
+
+        private void btnAgree_Click(object sender, EventArgs e)
+        {
+
+            loginForm.getRootForm().getRootPanel().Controls.Clear();
+
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.setLoginForm(loginForm);
+            registerForm.TopLevel = false;
+
+            loginForm.getRootForm().getRootPanel().Controls.Add(registerForm);
+            registerForm.Show();
+
+        }
     }
 }

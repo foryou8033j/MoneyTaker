@@ -64,6 +64,7 @@
             this.btnAgree.TabIndex = 2;
             this.btnAgree.Text = "동의";
             this.btnAgree.UseVisualStyleBackColor = true;
+            this.btnAgree.Click += new System.EventHandler(this.btnAgree_Click);
             // 
             // btnDisAgree
             // 
