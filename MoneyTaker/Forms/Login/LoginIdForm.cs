@@ -29,9 +29,21 @@ namespace MoneyTaker
             this.formManager = formManager;
         }
 
-        private void btnJoin_Click(object sender, EventArgs e)
+        private async void btnJoin_ClickAsync(object sender, EventArgs e)
         {
+            await Task.Delay(150);
             formManager.ShowRegisterTermsForm();
+        }
+
+        private async void LoginIdForm_LoadAsync(object sender, EventArgs e)
+        {
+            for (Width = 0; Width < 700; Width += 50)
+                await Task.Delay(1);
+        }
+
+        private async void btnFindEmail_Click(object sender, EventArgs e)
+        {
+            await Task.Delay(150);
         }
     }
 }

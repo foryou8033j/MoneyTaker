@@ -70,7 +70,7 @@
             this.btnAgree.TabIndex = 5;
             this.btnAgree.Text = "동의";
             this.btnAgree.UseVisualStyleBackColor = true;
-            this.btnAgree.Click += new System.EventHandler(this.btnAgree_Click);
+            this.btnAgree.Click += new System.EventHandler(this.btnAgree_ClickAsync);
             // 
             // btnDisAgree
             // 
@@ -83,9 +83,9 @@
             this.btnDisAgree.TabIndex = 6;
             this.btnDisAgree.Text = "동의하지 않음";
             this.btnDisAgree.UseVisualStyleBackColor = true;
-            this.btnDisAgree.Click += new System.EventHandler(this.btnDisAgree_Click);
+            this.btnDisAgree.Click += new System.EventHandler(this.btnDisAgree_ClickAsync);
             // 
-            // Register_Agree_Form
+            // RegisterTermsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,8 +98,9 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Register_Agree_Form";
+            this.Name = "RegisterTermsForm";
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterTermsForm_LoadAsync);
             this.ResumeLayout(false);
             this.PerformLayout();
 

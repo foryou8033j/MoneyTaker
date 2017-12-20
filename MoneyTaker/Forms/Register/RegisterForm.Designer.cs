@@ -148,6 +148,7 @@
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "가입하기";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancle
             // 
@@ -176,6 +177,7 @@
             this.btnConfirmEmail.TabIndex = 7;
             this.btnConfirmEmail.Text = "인증";
             this.btnConfirmEmail.UseVisualStyleBackColor = true;
+            this.btnConfirmEmail.Click += new System.EventHandler(this.btnConfirmEmail_Click);
             // 
             // RegisterForm
             // 
@@ -196,6 +198,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterForm_LoadAsync);
             this.ResumeLayout(false);
             this.PerformLayout();
 

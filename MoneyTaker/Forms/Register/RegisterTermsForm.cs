@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MoneyTaker
@@ -27,14 +28,22 @@ namespace MoneyTaker
             this.formManager = formManager;
         }
 
-        private void btnAgree_Click(object sender, EventArgs e)
+        private async void btnAgree_ClickAsync(object sender, EventArgs e)
         {
+            await Task.Delay(150);
             formManager.ShowRegisterForm();
         }
 
-        private void btnDisAgree_Click(object sender, EventArgs e)
+        private async void btnDisAgree_ClickAsync(object sender, EventArgs e)
         {
+            await Task.Delay(150);
             formManager.ShowLoginIdForm();
+        }
+
+        private async void RegisterTermsForm_LoadAsync(object sender, EventArgs e)
+        {
+            for (Width = 0; Width < 700; Width += 40)
+                await Task.Delay(1);
         }
     }
 }

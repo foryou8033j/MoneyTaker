@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -33,13 +35,14 @@ namespace MoneyTaker
             initialized = true;
         }
 
+
         private void AddPanel(Form item)
         {
             rootPanel.Controls.Clear();
             rootPanel.Controls.Add(item);
             item.Show();
-
         }
+
 
         public void ShowLoginIdForm()
         {

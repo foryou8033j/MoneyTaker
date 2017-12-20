@@ -62,7 +62,7 @@
             this.btnJoin.TabIndex = 1;
             this.btnJoin.Text = "회원가입";
             this.btnJoin.UseVisualStyleBackColor = true;
-            this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
+            this.btnJoin.Click += new System.EventHandler(this.btnJoin_ClickAsync);
             // 
             // btnFindEmail
             // 
@@ -79,6 +79,7 @@
             this.btnFindEmail.TabIndex = 2;
             this.btnFindEmail.Text = "이메일을 잊어버렸습니다!";
             this.btnFindEmail.UseVisualStyleBackColor = true;
+            this.btnFindEmail.Click += new System.EventHandler(this.btnFindEmail_Click);
             // 
             // LoginIdForm
             // 
@@ -92,6 +93,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginIdForm";
             this.Text = "LoginIdForm";
+            this.Load += new System.EventHandler(this.LoginIdForm_LoadAsync);
             this.ResumeLayout(false);
             this.PerformLayout();
 

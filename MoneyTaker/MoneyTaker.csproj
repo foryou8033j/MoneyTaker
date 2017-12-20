@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialog\Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormExchangeManager.cs" />
     <Compile Include="Forms\Login\LoginPasswordForm.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,9 @@
     <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dialog\Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginPasswordForm.resx">
       <DependentUpon>LoginPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
