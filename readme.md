@@ -1,0 +1,1 @@
+It is a project to link the Windows Form application and the mobile application to leave transaction records to borrow and borrow money among friends.

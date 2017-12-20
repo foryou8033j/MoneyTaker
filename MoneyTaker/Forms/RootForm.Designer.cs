@@ -47,6 +47,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(726, 396);
             this.Controls.Add(this.panelRoot);
+            this.MaximizeBox = false;
             this.Name = "RootForm";
             this.Text = "MoneyTaker";
             this.Load += new System.EventHandler(this.RootForm_Load);
