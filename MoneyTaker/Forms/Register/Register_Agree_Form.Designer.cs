@@ -52,13 +52,13 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(656, 245);
+            this.textBox1.Size = new System.Drawing.Size(656, 201);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // btnAgree
             // 
-            this.btnAgree.Location = new System.Drawing.Point(420, 293);
+            this.btnAgree.Location = new System.Drawing.Point(420, 250);
             this.btnAgree.Name = "btnAgree";
             this.btnAgree.Size = new System.Drawing.Size(124, 38);
             this.btnAgree.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnDisAgree
             // 
-            this.btnDisAgree.Location = new System.Drawing.Point(550, 293);
+            this.btnDisAgree.Location = new System.Drawing.Point(550, 250);
             this.btnDisAgree.Name = "btnDisAgree";
             this.btnDisAgree.Size = new System.Drawing.Size(124, 38);
             this.btnDisAgree.TabIndex = 3;
@@ -82,7 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(686, 333);
+            this.ClientSize = new System.Drawing.Size(700, 310);
             this.Controls.Add(this.btnDisAgree);
             this.Controls.Add(this.btnAgree);
             this.Controls.Add(this.textBox1);

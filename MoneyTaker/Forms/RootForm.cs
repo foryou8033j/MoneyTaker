@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,16 +10,20 @@ using System.Windows.Forms;
 
 namespace MoneyTaker
 {
-    public partial class RootForm : Form
+    public partial class RootForm : MaterialForm
     {
         public RootForm()
         {
             InitializeComponent();
         }
 
-        public Panel getRootPanel()
+        /**************************
+         * getRootPanel : RootForm의 배경 Panel을 반환합니다.
+         * return Panel
+         **************************/
+        public Panel GetRootPanel()
         {
-            return panel_Root;
+            return panelRoot;
         }
 
         private void RootForm_Load(object sender, EventArgs e)
@@ -27,9 +32,8 @@ namespace MoneyTaker
             loginForm.setRootForm(this);
             loginForm.TopLevel = false;
 
-            panel_Root.Controls.Add(loginForm);
+            panelRoot.Controls.Add(loginForm);
             loginForm.Show();
-
         }
 
         

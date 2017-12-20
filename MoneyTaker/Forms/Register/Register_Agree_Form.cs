@@ -31,8 +31,8 @@ namespace MoneyTaker
         private void btnDisAgree_Click(object sender, EventArgs e)
         {
 
-            loginForm.getRootForm().getRootPanel().Controls.Clear();
-            loginForm.getRootForm().getRootPanel().Controls.Add(loginForm);
+            loginForm.getRootForm().GetRootPanel().Controls.Clear();
+            loginForm.getRootForm().GetRootPanel().Controls.Add(loginForm);
 
 
         }
@@ -40,13 +40,13 @@ namespace MoneyTaker
         private void btnAgree_Click(object sender, EventArgs e)
         {
 
-            loginForm.getRootForm().getRootPanel().Controls.Clear();
+            loginForm.getRootForm().GetRootPanel().Controls.Clear();
 
             RegisterForm registerForm = new RegisterForm();
             registerForm.setLoginForm(loginForm);
             registerForm.TopLevel = false;
 
-            loginForm.getRootForm().getRootPanel().Controls.Add(registerForm);
+            loginForm.getRootForm().GetRootPanel().Controls.Add(registerForm);
             registerForm.Show();
 
         }

@@ -44,12 +44,12 @@ namespace MoneyTaker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            rootForm.getRootPanel().Controls.Clear();
+            rootForm.GetRootPanel().Controls.Clear();
 
             register_Agree_Form.setLoginForm(this);
             register_Agree_Form.TopLevel = false;
 
-            rootForm.getRootPanel().Controls.Add(register_Agree_Form);
+            rootForm.GetRootPanel().Controls.Add(register_Agree_Form);
             register_Agree_Form.Show();
         }
 

@@ -78,7 +78,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(456, 233);
+            this.button1.Location = new System.Drawing.Point(456, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 38);
             this.button1.TabIndex = 4;
@@ -88,7 +88,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(456, 277);
+            this.button2.Location = new System.Drawing.Point(456, 253);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 38);
             this.button2.TabIndex = 5;
@@ -132,7 +132,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(702, 372);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(700, 310);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

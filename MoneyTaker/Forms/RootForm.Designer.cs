@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_Root = new System.Windows.Forms.Panel();
+            this.panelRoot = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel_Root
+            // panelRoot
             // 
-            this.panel_Root.Location = new System.Drawing.Point(12, 12);
-            this.panel_Root.Name = "panel_Root";
-            this.panel_Root.Size = new System.Drawing.Size(702, 372);
-            this.panel_Root.TabIndex = 0;
+            this.panelRoot.BackColor = System.Drawing.SystemColors.Window;
+            this.panelRoot.Location = new System.Drawing.Point(14, 74);
+            this.panelRoot.Name = "panelRoot";
+            this.panelRoot.Size = new System.Drawing.Size(700, 310);
+            this.panelRoot.TabIndex = 0;
             // 
             // RootForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(726, 396);
-            this.Controls.Add(this.panel_Root);
+            this.Controls.Add(this.panelRoot);
             this.Name = "RootForm";
-            this.Text = "RootForm";
+            this.Text = "MoneyTaker";
             this.Load += new System.EventHandler(this.RootForm_Load);
             this.ResumeLayout(false);
 
@@ -53,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel_Root;
+        private System.Windows.Forms.Panel panelRoot;
     }
 }

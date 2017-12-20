@@ -8,8 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>MoneyTaker</RootNamespace>
     <AssemblyName>MoneyTaker</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -29,8 +31,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,33 +48,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterForm.cs">
+    <Compile Include="Forms\Register\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
+    <Compile Include="Forms\Register\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Register_Agree_Form.cs">
+    <Compile Include="Forms\Register\Register_Agree_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register_Agree_Form.Designer.cs">
+    <Compile Include="Forms\Register\Register_Agree_Form.Designer.cs">
       <DependentUpon>Register_Agree_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="RootForm.cs">
+    <Compile Include="Forms\RootForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RootForm.Designer.cs">
+    <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forms\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -79,16 +85,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegisterForm.resx">
+    <EmbeddedResource Include="Forms\Register\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register_Agree_Form.resx">
+    <EmbeddedResource Include="Forms\Register\Register_Agree_Form.resx">
       <DependentUpon>Register_Agree_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RootForm.resx">
+    <EmbeddedResource Include="Forms\RootForm.resx">
       <DependentUpon>RootForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
