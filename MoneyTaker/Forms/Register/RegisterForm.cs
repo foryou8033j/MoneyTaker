@@ -28,7 +28,9 @@ namespace MoneyTaker
             this.formManager = formManager;
         }
 
-
-
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            formManager.ShowLoginIdForm();
+        }
     }
 }
