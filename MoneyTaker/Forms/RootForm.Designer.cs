@@ -33,8 +33,8 @@
             // 
             // panelRoot
             // 
-            this.panelRoot.BackColor = System.Drawing.SystemColors.Window;
-            this.panelRoot.Location = new System.Drawing.Point(14, 74);
+            this.panelRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panelRoot.Location = new System.Drawing.Point(12, 73);
             this.panelRoot.Name = "panelRoot";
             this.panelRoot.Size = new System.Drawing.Size(700, 310);
             this.panelRoot.TabIndex = 0;
@@ -43,7 +43,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(726, 396);
             this.Controls.Add(this.panelRoot);
             this.Name = "RootForm";

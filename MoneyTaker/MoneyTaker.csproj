@@ -48,11 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Login\LoginForm.cs">
+    <Compile Include="Forms\FormExchangeManager.cs" />
+    <Compile Include="Forms\Login\LoginPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Forms\Login\LoginPasswordForm.Designer.cs">
+      <DependentUpon>LoginPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\LoginIdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
+      <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,11 +69,11 @@
     <Compile Include="Forms\Register\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Register\Register_Agree_Form.cs">
+    <Compile Include="Forms\Register\RegisterTermsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Register\Register_Agree_Form.Designer.cs">
-      <DependentUpon>Register_Agree_Form.cs</DependentUpon>
+    <Compile Include="Forms\Register\RegisterTermsForm.Designer.cs">
+      <DependentUpon>RegisterTermsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RootForm.cs">
       <SubType>Form</SubType>
@@ -74,8 +81,11 @@
     <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\Login\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Login\LoginPasswordForm.resx">
+      <DependentUpon>LoginPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
+      <DependentUpon>LoginIdForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,8 +100,8 @@
     <EmbeddedResource Include="Forms\Register\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Register\Register_Agree_Form.resx">
-      <DependentUpon>Register_Agree_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Register\RegisterTermsForm.resx">
+      <DependentUpon>RegisterTermsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RootForm.resx">
       <DependentUpon>RootForm.cs</DependentUpon>

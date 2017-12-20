@@ -9,12 +9,11 @@ using System.Windows.Forms;
 
 namespace MoneyTaker
 {
-    public partial class RegisterForm : Form
+    public partial class RegisterTermsForm : Form
     {
+        FormExchangeManager formManager;
 
-        private FormExchangeManager formManager;
-
-        public RegisterForm()
+        public RegisterTermsForm()
         {
             InitializeComponent();
         }
@@ -28,7 +27,14 @@ namespace MoneyTaker
             this.formManager = formManager;
         }
 
+        private void btnAgree_Click(object sender, EventArgs e)
+        {
+            formManager.ShowRegisterForm();
+        }
 
-
+        private void btnDisAgree_Click(object sender, EventArgs e)
+        {
+            formManager.ShowLoginIdForm();
+        }
     }
 }
