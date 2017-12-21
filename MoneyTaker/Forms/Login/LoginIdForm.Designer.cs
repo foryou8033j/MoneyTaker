@@ -38,7 +38,7 @@
             this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbEmail.Depth = 0;
             this.tbEmail.Hint = "E-Mail";
-            this.tbEmail.Location = new System.Drawing.Point(182, 122);
+            this.tbEmail.Location = new System.Drawing.Point(229, 132);
             this.tbEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
@@ -58,7 +58,7 @@
             this.btnJoin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnJoin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJoin.Depth = 0;
-            this.btnJoin.Location = new System.Drawing.Point(449, 114);
+            this.btnJoin.Location = new System.Drawing.Point(308, 195);
             this.btnJoin.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnJoin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnJoin.Name = "btnJoin";
@@ -77,7 +77,7 @@
             this.btnFindEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFindEmail.Depth = 0;
             this.btnFindEmail.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnFindEmail.Location = new System.Drawing.Point(251, 232);
+            this.btnFindEmail.Location = new System.Drawing.Point(258, 259);
             this.btnFindEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFindEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnFindEmail.Name = "btnFindEmail";

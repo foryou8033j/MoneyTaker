@@ -39,7 +39,7 @@
             this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPassword.Depth = 0;
             this.tbPassword.Hint = "Password";
-            this.tbPassword.Location = new System.Drawing.Point(182, 122);
+            this.tbPassword.Location = new System.Drawing.Point(229, 132);
             this.tbPassword.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
@@ -57,7 +57,7 @@
             this.btnOtherUser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOtherUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOtherUser.Depth = 0;
-            this.btnOtherUser.Location = new System.Drawing.Point(449, 114);
+            this.btnOtherUser.Location = new System.Drawing.Point(478, 122);
             this.btnOtherUser.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnOtherUser.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnOtherUser.Name = "btnOtherUser";
@@ -76,7 +76,7 @@
             this.btnFindPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFindPassword.Depth = 0;
             this.btnFindPassword.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnFindPassword.Location = new System.Drawing.Point(251, 232);
+            this.btnFindPassword.Location = new System.Drawing.Point(258, 259);
             this.btnFindPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFindPassword.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnFindPassword.Name = "btnFindPassword";
@@ -92,7 +92,7 @@
             this.chbAutoLogin.AutoSize = true;
             this.chbAutoLogin.Depth = 0;
             this.chbAutoLogin.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chbAutoLogin.Location = new System.Drawing.Point(299, 160);
+            this.chbAutoLogin.Location = new System.Drawing.Point(308, 195);
             this.chbAutoLogin.Margin = new System.Windows.Forms.Padding(0);
             this.chbAutoLogin.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chbAutoLogin.MouseState = MaterialSkin.MouseState.HOVER;

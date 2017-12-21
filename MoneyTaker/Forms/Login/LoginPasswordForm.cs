@@ -35,8 +35,9 @@ namespace MoneyTaker
             //TextBox 입력된 암호 암호화 후 매칭 확인
             if (new EncryptTool().Encrypt(input).Equals(received))
             {
-                MessageBox.Show("성공!");
                 tbPassword.Text = received;
+                tbPassword.Enabled = false;
+                MessageBox.Show("성공!");
             }
         }
 
