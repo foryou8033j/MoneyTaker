@@ -156,5 +156,17 @@
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Borrow\" />
+    <Folder Include="Forms\Buscar\" />
+    <Folder Include="Forms\Friends\" />
+    <Folder Include="Forms\History\" />
+    <Folder Include="Forms\Information\" />
+    <Folder Include="Forms\Setting\" />
+    <Folder Include="Model\Friend\" />
+    <Folder Include="Model\History\Borrow\" />
+    <Folder Include="Model\History\Buscar\" />
+    <Folder Include="Model\User\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

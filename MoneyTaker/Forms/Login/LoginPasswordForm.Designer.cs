@@ -55,6 +55,7 @@
             // 
             this.btnOtherUser.AutoSize = true;
             this.btnOtherUser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnOtherUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOtherUser.Depth = 0;
             this.btnOtherUser.Location = new System.Drawing.Point(449, 114);
             this.btnOtherUser.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -72,6 +73,7 @@
             // 
             this.btnFindPassword.AutoSize = true;
             this.btnFindPassword.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnFindPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFindPassword.Depth = 0;
             this.btnFindPassword.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnFindPassword.Location = new System.Drawing.Point(251, 232);

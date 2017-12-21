@@ -82,6 +82,7 @@ namespace MoneyTaker
 
                 new Thread(new ThreadStart(delegate ()
                 {
+                    Cursor = Cursors.WaitCursor;
                     email = tbEmail.Text;
                     tbEmail.Enabled = false;
                     btnConfirmEmail.Enabled = false;
@@ -93,6 +94,7 @@ namespace MoneyTaker
 
                     if (MailManager.SendCode(tbEmail.Text, code))
                     {
+                        Cursor = Cursors.Default;
                         lbnEmailNotification.Text = "발송 성공! 메일함을 확인 해 주세요.";
                         lbnEmail.Text = "인증코드";
                         tbEmail.Text = "";

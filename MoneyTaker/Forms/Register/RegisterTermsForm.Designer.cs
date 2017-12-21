@@ -61,6 +61,7 @@
             // 
             // btnAgree
             // 
+            this.btnAgree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgree.Depth = 0;
             this.btnAgree.Location = new System.Drawing.Point(390, 249);
             this.btnAgree.MouseState = MaterialSkin.MouseState.HOVER;
@@ -74,6 +75,7 @@
             // 
             // btnDisAgree
             // 
+            this.btnDisAgree.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDisAgree.Depth = 0;
             this.btnDisAgree.Location = new System.Drawing.Point(535, 249);
             this.btnDisAgree.MouseState = MaterialSkin.MouseState.HOVER;

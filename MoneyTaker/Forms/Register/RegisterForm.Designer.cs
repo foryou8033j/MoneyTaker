@@ -86,6 +86,7 @@
             // 
             // tbEmail
             // 
+            this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbEmail.Depth = 0;
             this.tbEmail.Hint = "E-Mail";
             this.tbEmail.Location = new System.Drawing.Point(224, 104);
@@ -102,6 +103,7 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPassword.Depth = 0;
             this.tbPassword.Enabled = false;
             this.tbPassword.Hint = "Password";
@@ -119,6 +121,7 @@
             // 
             // tbPasswordReType
             // 
+            this.tbPasswordReType.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPasswordReType.Depth = 0;
             this.tbPasswordReType.Enabled = false;
             this.tbPasswordReType.Hint = "Password";
@@ -151,6 +154,7 @@
             // btnRegister
             // 
             this.btnRegister.CausesValidation = false;
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.Depth = 0;
             this.btnRegister.Location = new System.Drawing.Point(506, 102);
             this.btnRegister.MouseState = MaterialSkin.MouseState.HOVER;
@@ -165,6 +169,7 @@
             // btnCancle
             // 
             this.btnCancle.CausesValidation = false;
+            this.btnCancle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancle.Depth = 0;
             this.btnCancle.Location = new System.Drawing.Point(506, 174);
             this.btnCancle.MouseState = MaterialSkin.MouseState.HOVER;
@@ -181,7 +186,7 @@
             this.btnConfirmEmail.AutoSize = true;
             this.btnConfirmEmail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnConfirmEmail.CausesValidation = false;
-            this.btnConfirmEmail.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnConfirmEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirmEmail.Depth = 0;
             this.btnConfirmEmail.Location = new System.Drawing.Point(425, 95);
             this.btnConfirmEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
