@@ -44,13 +44,15 @@ namespace MoneyTaker
         private async void btnFindEmail_Click(object sender, EventArgs e)
         {
             await Task.Delay(150);
-
         }
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
-            if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text))
-                formManager.ShowLoginPassForm();
+            if(tbEmail.Text.Length > 8)
+            {
+                if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text))
+                    formManager.ShowLoginPassForm();
+            }
         }
 
         private void tbEmail_Click(object sender, EventArgs e)
