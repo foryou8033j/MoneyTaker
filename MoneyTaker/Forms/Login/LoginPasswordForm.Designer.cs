@@ -49,6 +49,7 @@
             this.tbPassword.Size = new System.Drawing.Size(242, 23);
             this.tbPassword.TabIndex = 0;
             this.tbPassword.UseSystemPasswordChar = false;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // btnOtherUser
             // 
@@ -100,6 +101,7 @@
             this.chbAutoLogin.TabStop = false;
             this.chbAutoLogin.Text = "자동로그인";
             this.chbAutoLogin.UseVisualStyleBackColor = true;
+            this.chbAutoLogin.CheckedChanged += new System.EventHandler(this.chbAutoLogin_CheckedChanged);
             // 
             // LoginPasswordForm
             // 

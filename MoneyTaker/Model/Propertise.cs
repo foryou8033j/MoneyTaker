@@ -14,6 +14,11 @@ namespace MoneyTaker
 
     }
 
+    public class USERConfig
+    {
+        public static String EMAIL = "";
+    }
+
     public class SMTPConfig
     {
         public static readonly String ID = "nightskyteam@gmail.com";

@@ -39,6 +39,12 @@ namespace MoneyTaker
         {
             for (Width = 0; Width < 700; Width += 50)
                 await Task.Delay(1);
+
+            if (new RegistryManager().IsAutoLogin())
+            {
+                //레지스트리로부터 이메일 값만 가져오고 인증여부는 TextBox Changed에 맡긴다.
+                tbEmail.Text = new RegistryManager().GetEmail();
+            }
         }
 
         private async void btnFindEmail_Click(object sender, EventArgs e)
@@ -51,7 +57,11 @@ namespace MoneyTaker
             if(tbEmail.Text.Length > 8)
             {
                 if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text))
+                {
+                    USERConfig.EMAIL = tbEmail.Text;
                     formManager.ShowLoginPassForm();
+                }
+                    
             }
         }
 

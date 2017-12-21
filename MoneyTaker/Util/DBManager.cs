@@ -38,6 +38,9 @@ namespace MoneyTaker
                 return false;
             else
             {
+                if (password.Contains("\\"))
+                    password = password.Replace("\\", "\\\\");
+
                 MySqlCommand cmd = new MySqlCommand("INSERT INTO User VALUES ('', '"+email+"', '"+ password+"')", conn);
                 cmd.ExecuteNonQuery();
                 return true;
