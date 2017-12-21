@@ -47,6 +47,9 @@
             this.tbEmail.Size = new System.Drawing.Size(242, 23);
             this.tbEmail.TabIndex = 0;
             this.tbEmail.UseSystemPasswordChar = false;
+            this.tbEmail.Click += new System.EventHandler(this.tbEmail_Click);
+            this.tbEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEmail_KeyDown);
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // btnJoin
             // 
@@ -60,6 +63,7 @@
             this.btnJoin.Primary = false;
             this.btnJoin.Size = new System.Drawing.Size(72, 36);
             this.btnJoin.TabIndex = 1;
+            this.btnJoin.TabStop = false;
             this.btnJoin.Text = "회원가입";
             this.btnJoin.UseVisualStyleBackColor = true;
             this.btnJoin.Click += new System.EventHandler(this.btnJoin_ClickAsync);
@@ -77,6 +81,7 @@
             this.btnFindEmail.Primary = false;
             this.btnFindEmail.Size = new System.Drawing.Size(185, 36);
             this.btnFindEmail.TabIndex = 2;
+            this.btnFindEmail.TabStop = false;
             this.btnFindEmail.Text = "이메일을 잊어버렸습니다!";
             this.btnFindEmail.UseVisualStyleBackColor = true;
             this.btnFindEmail.Click += new System.EventHandler(this.btnFindEmail_Click);

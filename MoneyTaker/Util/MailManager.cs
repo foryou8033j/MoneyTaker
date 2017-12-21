@@ -12,7 +12,7 @@ namespace MoneyTaker
     {
         private static readonly MailAddress FROM = new MailAddress("noreply@alcoholcoding.com", "Alcoholcoding Team.", System.Text.Encoding.UTF8);
 
-        public static bool SendCode(String receiver, int Code)
+        public static bool SendCode(String receiver, String Code)
         {
             String title = Propertise.APPNAME + " 회원가입 인증코드입니다.";
             String body = "<HTML>" +
@@ -21,7 +21,7 @@ namespace MoneyTaker
                 Propertise.APPNAME + " 의 가입을 위한 인증코드 안내 메일입니다." + 
                 "<BR>" +
                 "<BR>" +
-                "<H2>인증코드 : <STRONG>" + Code.ToString() + "</STRONG></H2>" +
+                "<H2>인증코드 : <STRONG>" + Code + "</STRONG></H2>" +
                 "<BR>" + 
                 "<BR>" + 
                 "이 메일을 요청 한 적이 없다면 무시해주세요." +

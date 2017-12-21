@@ -78,7 +78,11 @@ namespace MoneyTaker
 
         public void ShowLoginPassForm()
         {
+            LoginPasswordForm loginPasswordForm = new LoginPasswordForm();
+            loginPasswordForm.SetFormManager(this);
+            loginPasswordForm.TopLevel = false;
 
+            AddPanel(loginPasswordForm);
         }
 
         public void ShowRegisterTermsForm()

@@ -28,45 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.lbnEmail = new MaterialSkin.Controls.MaterialLabel();
+            this.lbnPassword = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.tbEmail = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.tbPassword = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.tbPasswordReType = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.lbnPasswordRetype = new MaterialSkin.Controls.MaterialLabel();
             this.btnRegister = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCancle = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnConfirmEmail = new MaterialSkin.Controls.MaterialFlatButton();
+            this.lbnEmailNotification = new MaterialSkin.Controls.MaterialLabel();
+            this.lbnPasswordSecurity = new MaterialSkin.Controls.MaterialLabel();
+            this.lbnPasswordNotification = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
-            // materialLabel1
+            // lbnEmail
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.CausesValidation = false;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(148, 108);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(51, 19);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "E-mail";
+            this.lbnEmail.AutoSize = true;
+            this.lbnEmail.CausesValidation = false;
+            this.lbnEmail.Depth = 0;
+            this.lbnEmail.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbnEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnEmail.Location = new System.Drawing.Point(148, 108);
+            this.lbnEmail.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnEmail.Name = "lbnEmail";
+            this.lbnEmail.Size = new System.Drawing.Size(51, 19);
+            this.lbnEmail.TabIndex = 0;
+            this.lbnEmail.Text = "E-mail";
             // 
-            // materialLabel2
+            // lbnPassword
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.CausesValidation = false;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(124, 151);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(75, 19);
-            this.materialLabel2.TabIndex = 0;
-            this.materialLabel2.Text = "Password";
+            this.lbnPassword.AutoSize = true;
+            this.lbnPassword.CausesValidation = false;
+            this.lbnPassword.Depth = 0;
+            this.lbnPassword.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbnPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnPassword.Location = new System.Drawing.Point(124, 151);
+            this.lbnPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnPassword.Name = "lbnPassword";
+            this.lbnPassword.Size = new System.Drawing.Size(75, 19);
+            this.lbnPassword.TabIndex = 0;
+            this.lbnPassword.Text = "Password";
             // 
             // materialLabel3
             // 
@@ -95,10 +98,12 @@
             this.tbEmail.Size = new System.Drawing.Size(200, 23);
             this.tbEmail.TabIndex = 1;
             this.tbEmail.UseSystemPasswordChar = false;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // tbPassword
             // 
             this.tbPassword.Depth = 0;
+            this.tbPassword.Enabled = false;
             this.tbPassword.Hint = "Password";
             this.tbPassword.Location = new System.Drawing.Point(224, 147);
             this.tbPassword.MouseState = MaterialSkin.MouseState.HOVER;
@@ -110,10 +115,12 @@
             this.tbPassword.Size = new System.Drawing.Size(243, 23);
             this.tbPassword.TabIndex = 2;
             this.tbPassword.UseSystemPasswordChar = false;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // tbPasswordReType
             // 
             this.tbPasswordReType.Depth = 0;
+            this.tbPasswordReType.Enabled = false;
             this.tbPasswordReType.Hint = "Password";
             this.tbPasswordReType.Location = new System.Drawing.Point(224, 189);
             this.tbPasswordReType.MouseState = MaterialSkin.MouseState.HOVER;
@@ -125,20 +132,21 @@
             this.tbPasswordReType.Size = new System.Drawing.Size(243, 23);
             this.tbPasswordReType.TabIndex = 3;
             this.tbPasswordReType.UseSystemPasswordChar = false;
+            this.tbPasswordReType.TextChanged += new System.EventHandler(this.tbPasswordReType_TextChanged);
             // 
-            // materialLabel4
+            // lbnPasswordRetype
             // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.CausesValidation = false;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(78, 193);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(121, 19);
-            this.materialLabel4.TabIndex = 4;
-            this.materialLabel4.Text = "Check Password";
+            this.lbnPasswordRetype.AutoSize = true;
+            this.lbnPasswordRetype.CausesValidation = false;
+            this.lbnPasswordRetype.Depth = 0;
+            this.lbnPasswordRetype.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbnPasswordRetype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnPasswordRetype.Location = new System.Drawing.Point(78, 193);
+            this.lbnPasswordRetype.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnPasswordRetype.Name = "lbnPasswordRetype";
+            this.lbnPasswordRetype.Size = new System.Drawing.Size(121, 19);
+            this.lbnPasswordRetype.TabIndex = 4;
+            this.lbnPasswordRetype.Text = "Check Password";
             // 
             // btnRegister
             // 
@@ -175,7 +183,7 @@
             this.btnConfirmEmail.CausesValidation = false;
             this.btnConfirmEmail.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnConfirmEmail.Depth = 0;
-            this.btnConfirmEmail.Location = new System.Drawing.Point(425, 91);
+            this.btnConfirmEmail.Location = new System.Drawing.Point(425, 95);
             this.btnConfirmEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnConfirmEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnConfirmEmail.Name = "btnConfirmEmail";
@@ -186,22 +194,61 @@
             this.btnConfirmEmail.UseVisualStyleBackColor = true;
             this.btnConfirmEmail.Click += new System.EventHandler(this.btnConfirmEmail_Click);
             // 
+            // lbnEmailNotification
+            // 
+            this.lbnEmailNotification.AutoSize = true;
+            this.lbnEmailNotification.Depth = 0;
+            this.lbnEmailNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbnEmailNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnEmailNotification.Location = new System.Drawing.Point(219, 128);
+            this.lbnEmailNotification.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnEmailNotification.Name = "lbnEmailNotification";
+            this.lbnEmailNotification.Size = new System.Drawing.Size(0, 13);
+            this.lbnEmailNotification.TabIndex = 8;
+            // 
+            // lbnPasswordSecurity
+            // 
+            this.lbnPasswordSecurity.AutoSize = true;
+            this.lbnPasswordSecurity.Depth = 0;
+            this.lbnPasswordSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbnPasswordSecurity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnPasswordSecurity.Location = new System.Drawing.Point(467, 150);
+            this.lbnPasswordSecurity.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnPasswordSecurity.Name = "lbnPasswordSecurity";
+            this.lbnPasswordSecurity.Size = new System.Drawing.Size(0, 20);
+            this.lbnPasswordSecurity.TabIndex = 9;
+            // 
+            // lbnPasswordNotification
+            // 
+            this.lbnPasswordNotification.AutoSize = true;
+            this.lbnPasswordNotification.Depth = 0;
+            this.lbnPasswordNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbnPasswordNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnPasswordNotification.Location = new System.Drawing.Point(220, 170);
+            this.lbnPasswordNotification.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbnPasswordNotification.Name = "lbnPasswordNotification";
+            this.lbnPasswordNotification.Size = new System.Drawing.Size(0, 13);
+            this.lbnPasswordNotification.TabIndex = 10;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(700, 310);
+            this.Controls.Add(this.lbnPasswordNotification);
+            this.Controls.Add(this.lbnPasswordSecurity);
+            this.Controls.Add(this.lbnEmailNotification);
             this.Controls.Add(this.btnConfirmEmail);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.materialLabel4);
+            this.Controls.Add(this.lbnPasswordRetype);
             this.Controls.Add(this.tbPasswordReType);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbEmail);
-            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.lbnPassword);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.lbnEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
@@ -213,15 +260,18 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel lbnEmail;
+        private MaterialSkin.Controls.MaterialLabel lbnPassword;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialSingleLineTextField tbEmail;
         private MaterialSkin.Controls.MaterialSingleLineTextField tbPassword;
         private MaterialSkin.Controls.MaterialSingleLineTextField tbPasswordReType;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel lbnPasswordRetype;
         private MaterialSkin.Controls.MaterialRaisedButton btnRegister;
         private MaterialSkin.Controls.MaterialRaisedButton btnCancle;
         private MaterialSkin.Controls.MaterialFlatButton btnConfirmEmail;
+        private MaterialSkin.Controls.MaterialLabel lbnEmailNotification;
+        private MaterialSkin.Controls.MaterialLabel lbnPasswordSecurity;
+        private MaterialSkin.Controls.MaterialLabel lbnPasswordNotification;
     }
 }

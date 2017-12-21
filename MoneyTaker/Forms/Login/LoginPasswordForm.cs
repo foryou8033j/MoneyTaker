@@ -12,21 +12,33 @@ namespace MoneyTaker
 {
     public partial class LoginPasswordForm : Form
     {
-        private RootForm rootForm;
+        private FormExchangeManager formManager;
 
         public LoginPasswordForm()
         {
             InitializeComponent();
         }
 
-        public void setRootForm(RootForm rootForm)
+        /// <summary>
+        /// Form Manager와 연동합니다.
+        /// </summary>
+        /// <param name="formManager"></param>
+        public void SetFormManager(FormExchangeManager formManager)
         {
-            this.rootForm = rootForm;
+            this.formManager = formManager;
         }
-        
-        public RootForm getRootForm()
+
+        private async void LoginPasswordForm_LoadAsync(object sender, EventArgs e)
         {
-            return rootForm;
+            for (Width = 0; Width < 700; Width += 50)
+                await Task.Delay(1);
+
+            tbPassword.Focus();
+        }
+
+        private void btnOtherUser_Click(object sender, EventArgs e)
+        {
+            formManager.ShowLoginIdForm();
         }
     }
 }

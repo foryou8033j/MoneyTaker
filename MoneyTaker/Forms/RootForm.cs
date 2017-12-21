@@ -15,11 +15,13 @@ namespace MoneyTaker
     {
 
         private FormExchangeManager formManager;
+        private DBManager dbManager;
 
         public RootForm()
         {
             InitializeComponent();
             formManager = new FormExchangeManager(this);
+            dbManager = new DBManager();
         }
 
         /// <summary>
@@ -36,6 +38,15 @@ namespace MoneyTaker
         public FormExchangeManager AccessFormManager()
         {
             return formManager;
+        }
+
+        /// <summary>
+        /// DB 관리자에 접근합니다.
+        /// </summary>
+        /// <returns></returns>
+        public DBManager AccessDBManager()
+        {
+            return dbManager;
         }
 
         /// <summary>

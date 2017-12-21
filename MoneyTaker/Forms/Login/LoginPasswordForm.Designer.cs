@@ -36,6 +36,7 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPassword.Depth = 0;
             this.tbPassword.Hint = "Password";
             this.tbPassword.Location = new System.Drawing.Point(182, 122);
@@ -61,8 +62,10 @@
             this.btnOtherUser.Primary = false;
             this.btnOtherUser.Size = new System.Drawing.Size(91, 36);
             this.btnOtherUser.TabIndex = 1;
+            this.btnOtherUser.TabStop = false;
             this.btnOtherUser.Text = "다른 사용자";
             this.btnOtherUser.UseVisualStyleBackColor = true;
+            this.btnOtherUser.Click += new System.EventHandler(this.btnOtherUser_Click);
             // 
             // btnFindPassword
             // 
@@ -77,6 +80,7 @@
             this.btnFindPassword.Primary = false;
             this.btnFindPassword.Size = new System.Drawing.Size(200, 36);
             this.btnFindPassword.TabIndex = 2;
+            this.btnFindPassword.TabStop = false;
             this.btnFindPassword.Text = "비밀번호를 잊어버렸습니다!";
             this.btnFindPassword.UseVisualStyleBackColor = true;
             // 
@@ -93,6 +97,7 @@
             this.chbAutoLogin.Ripple = true;
             this.chbAutoLogin.Size = new System.Drawing.Size(105, 30);
             this.chbAutoLogin.TabIndex = 3;
+            this.chbAutoLogin.TabStop = false;
             this.chbAutoLogin.Text = "자동로그인";
             this.chbAutoLogin.UseVisualStyleBackColor = true;
             // 
@@ -109,6 +114,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginPasswordForm";
             this.Text = "LoginIdForm";
+            this.Load += new System.EventHandler(this.LoginPasswordForm_LoadAsync);
             this.ResumeLayout(false);
             this.PerformLayout();
 
