@@ -101,6 +101,7 @@
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\DBManager.cs" />
+    <Compile Include="Util\EncryptTool.cs" />
     <Compile Include="Util\MailManager.cs" />
     <Compile Include="Util\RegistryManager.cs" />
     <EmbeddedResource Include="Dialog\Alert.resx">

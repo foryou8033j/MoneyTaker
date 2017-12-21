@@ -32,10 +32,11 @@ namespace MoneyTaker
 
         private void CheckPassword(String input, String received)
         {
-            //암호화 과정 필요
-            if (input.Equals(received))
+            //TextBox 입력된 암호 암호화 후 매칭 확인
+            if (new EncryptTool().Encrypt(input).Equals(received))
             {
                 MessageBox.Show("성공!");
+                tbPassword.Text = received;
             }
         }
 

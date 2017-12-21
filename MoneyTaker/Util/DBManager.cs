@@ -38,8 +38,8 @@ namespace MoneyTaker
                 return false;
             else
             {
-                if (password.Contains("\\"))
-                    password = password.Replace("\\", "\\\\");
+                //패스워드 암호화하여 DB에 전송
+                password = new EncryptTool().Encrypt(password);
 
                 MySqlCommand cmd = new MySqlCommand("INSERT INTO User VALUES ('', '"+email+"', '"+ password+"')", conn);
                 cmd.ExecuteNonQuery();
