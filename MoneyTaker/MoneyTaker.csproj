@@ -67,6 +67,7 @@
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Propertise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\Register\RegisterForm.cs">
@@ -87,6 +88,7 @@
     <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\MailManager.cs" />
     <EmbeddedResource Include="Dialog\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>

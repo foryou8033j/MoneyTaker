@@ -44,6 +44,18 @@ namespace MoneyTaker
         }
 
         /// <summary>
+        /// RootForm 이 지정 된 경우 해당 Form 을 반환합니다.
+        /// </summary>
+        /// <returns></returns>
+        public Form GetRootForm()
+        {
+            if (rootForm != null)
+                return rootForm;
+            else
+                return null;
+        }
+
+        /// <summary>
         /// Form 교체를 위한 메서드
         /// </summary>
         /// <param name="item"></param>

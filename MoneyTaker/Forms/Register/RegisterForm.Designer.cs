@@ -43,10 +43,11 @@
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
+            this.materialLabel1.CausesValidation = false;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(167, 108);
+            this.materialLabel1.Location = new System.Drawing.Point(148, 108);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(51, 19);
@@ -56,10 +57,11 @@
             // materialLabel2
             // 
             this.materialLabel2.AutoSize = true;
+            this.materialLabel2.CausesValidation = false;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(154, 151);
+            this.materialLabel2.Location = new System.Drawing.Point(124, 151);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(75, 19);
@@ -83,14 +85,14 @@
             // 
             this.tbEmail.Depth = 0;
             this.tbEmail.Hint = "E-Mail";
-            this.tbEmail.Location = new System.Drawing.Point(254, 104);
+            this.tbEmail.Location = new System.Drawing.Point(224, 104);
             this.tbEmail.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.SelectedText = "";
             this.tbEmail.SelectionLength = 0;
             this.tbEmail.SelectionStart = 0;
-            this.tbEmail.Size = new System.Drawing.Size(164, 23);
+            this.tbEmail.Size = new System.Drawing.Size(200, 23);
             this.tbEmail.TabIndex = 1;
             this.tbEmail.UseSystemPasswordChar = false;
             // 
@@ -98,14 +100,14 @@
             // 
             this.tbPassword.Depth = 0;
             this.tbPassword.Hint = "Password";
-            this.tbPassword.Location = new System.Drawing.Point(254, 147);
+            this.tbPassword.Location = new System.Drawing.Point(224, 147);
             this.tbPassword.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.SelectedText = "";
             this.tbPassword.SelectionLength = 0;
             this.tbPassword.SelectionStart = 0;
-            this.tbPassword.Size = new System.Drawing.Size(200, 23);
+            this.tbPassword.Size = new System.Drawing.Size(243, 23);
             this.tbPassword.TabIndex = 2;
             this.tbPassword.UseSystemPasswordChar = false;
             // 
@@ -113,32 +115,34 @@
             // 
             this.tbPasswordReType.Depth = 0;
             this.tbPasswordReType.Hint = "Password";
-            this.tbPasswordReType.Location = new System.Drawing.Point(254, 189);
+            this.tbPasswordReType.Location = new System.Drawing.Point(224, 189);
             this.tbPasswordReType.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbPasswordReType.Name = "tbPasswordReType";
             this.tbPasswordReType.PasswordChar = '*';
             this.tbPasswordReType.SelectedText = "";
             this.tbPasswordReType.SelectionLength = 0;
             this.tbPasswordReType.SelectionStart = 0;
-            this.tbPasswordReType.Size = new System.Drawing.Size(200, 23);
+            this.tbPasswordReType.Size = new System.Drawing.Size(243, 23);
             this.tbPasswordReType.TabIndex = 3;
             this.tbPasswordReType.UseSystemPasswordChar = false;
             // 
             // materialLabel4
             // 
             this.materialLabel4.AutoSize = true;
+            this.materialLabel4.CausesValidation = false;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(162, 192);
+            this.materialLabel4.Location = new System.Drawing.Point(78, 193);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(58, 19);
+            this.materialLabel4.Size = new System.Drawing.Size(121, 19);
             this.materialLabel4.TabIndex = 4;
-            this.materialLabel4.Text = "ReType";
+            this.materialLabel4.Text = "Check Password";
             // 
             // btnRegister
             // 
+            this.btnRegister.CausesValidation = false;
             this.btnRegister.Depth = 0;
             this.btnRegister.Location = new System.Drawing.Point(506, 102);
             this.btnRegister.MouseState = MaterialSkin.MouseState.HOVER;
@@ -152,6 +156,7 @@
             // 
             // btnCancle
             // 
+            this.btnCancle.CausesValidation = false;
             this.btnCancle.Depth = 0;
             this.btnCancle.Location = new System.Drawing.Point(506, 174);
             this.btnCancle.MouseState = MaterialSkin.MouseState.HOVER;
@@ -167,6 +172,8 @@
             // 
             this.btnConfirmEmail.AutoSize = true;
             this.btnConfirmEmail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConfirmEmail.CausesValidation = false;
+            this.btnConfirmEmail.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnConfirmEmail.Depth = 0;
             this.btnConfirmEmail.Location = new System.Drawing.Point(425, 91);
             this.btnConfirmEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);

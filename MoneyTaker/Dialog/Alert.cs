@@ -22,16 +22,27 @@ namespace MoneyTaker
             InitializeComponent();
         }
 
-        public Alert(Exception e)
+        public Alert(Form parent, Exception e)
         {
+
+            
             InitializeComponent();
+
+            TopLevel = false;
+            Parent = parent;
+
             this.Text = "Error";
             lbnContents.Text = e.Message;
         }
 
-        public Alert(String title, String contents)
+        public Alert(Form parent, String title, String contents)
         {
+            
             InitializeComponent();
+
+            TopLevel = false;
+            Parent = parent;
+
 
             this.Text = title;  // 명시적 this 지칭
             lbnContents.Text = contents;
@@ -40,6 +51,16 @@ namespace MoneyTaker
         private void btnOK_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Alert_Load(object sender, EventArgs e)
+        {
+            //Material Skin Manager 정의
+            var skinManager = MaterialSkinManager.Instance;
+            skinManager.AddFormToManage(this);
+            skinManager.Theme = MaterialSkinManager.Themes.DARK;
+            skinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
         }
     }
 }

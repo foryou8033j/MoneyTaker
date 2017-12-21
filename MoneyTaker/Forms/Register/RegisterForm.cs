@@ -44,7 +44,24 @@ namespace MoneyTaker
 
         private async void btnConfirmEmail_Click(object sender, EventArgs e)
         {
+            if (tbEmail.Text.Length < 5 || !tbEmail.Text.Contains("@"))
+            {
+                //TODO : Material Design Alert 박스 오류있음. 수정 필요
+                //new Alert(formManager.GetRootForm(), "오류", "올바른 이메일 주소를 입력 해 주세요.").Show();
+
+                MessageBox.Show(formManager.GetRootForm(), "올바른 이메일 주소를 입력 해 주세요.", "오류", MessageBoxButtons.OK,MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+
+            }
+            else
+            {
+                new Thread(new ThreadStart(delegate ()
+                {
+                    MailManager.SendCode(tbEmail.Text, 17445);
+                })).Start();
+            }
+
             await Task.Delay(150);
+            
         }
 
         private async void btnRegister_Click(object sender, EventArgs e)
