@@ -37,7 +37,21 @@ namespace MoneyTaker
             {
                 tbPassword.Text = received;
                 tbPassword.Enabled = false;
-                MessageBox.Show("성공!");
+
+
+                DataSet dataSet = ((RootForm)formManager.GetRootForm()).AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
+                DataRow datarow = dataSet.Tables[0].Rows[0];
+                String name = datarow["Name"].ToString();
+
+                if (name.Equals("") || name == null) //DB에 이름이 저장되어 있지 않다면 최초접속으로 가정하고 기본 정보를 받는 Form 으로 넘긴다
+                {
+                    formManager.ShowInitInformationForm();
+                }
+                else
+                {
+                    MessageBox.Show("로그인 성공!, 기존에 사용하던 유저이므로 여기서 최근 거래 기록 화면을 보여준다.");
+                }
+
             }
         }
 

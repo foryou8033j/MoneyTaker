@@ -67,6 +67,12 @@
       <DependentUpon>Alert.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormExchangeManager.cs" />
+    <Compile Include="Forms\Login\InitInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\InitInformationForm.Designer.cs">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login\LoginPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="Util\RegistryManager.cs" />
     <EmbeddedResource Include="Dialog\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\InitInformationForm.resx">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginPasswordForm.resx">
       <DependentUpon>LoginPasswordForm.cs</DependentUpon>
