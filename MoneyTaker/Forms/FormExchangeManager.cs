@@ -104,6 +104,15 @@ namespace MoneyTaker
             AddPanel(registerForm);
         }
 
+        public void ShowInitInformationForm()
+        {
+            InitInformationForm initInformationForm = new InitInformationForm();
+            initInformationForm.SetFormManager(this);
+            initInformationForm.TopLevel = false;
+
+            AddPanel(initInformationForm);
+        }
+
         public void ShowFindIdForm()
         {
 

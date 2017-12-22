@@ -32,6 +32,31 @@ namespace MoneyTaker
             }
         }
 
+        /// <summary>
+        /// 사용자 이름을 변경시킨다
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="name"></param>
+        public void UpdateUserName(String email, String name)
+        {
+
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("UPDATE User SET Name = '" + name + "' WHERE Email = '" + email + "'", conn);
+                cmd.ExecuteNonQuery();
+            }catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            
+        }
+
+        /// <summary>
+        /// 사용자 최초 데이터를 DB에 삽입한다
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public bool InsertRegisterData(String email, String password)
         {
             if (ExistUserEmail(email))
@@ -47,6 +72,11 @@ namespace MoneyTaker
             }
         }
 
+        /// <summary>
+        /// 이메일이 DB 상에 존재하는지 검사한다
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         public bool ExistUserEmail(String email)
         {
             foreach (DataRow r in Select("User", "Email = '"+email+"'").Tables[0].Rows)
@@ -58,6 +88,12 @@ namespace MoneyTaker
             return false;
         }
 
+        /// <summary>
+        /// Select 문을 실행한다
+        /// </summary>
+        /// <param name="table"></param>
+        /// <param name="sqlWord"></param>
+        /// <returns></returns>
         public DataSet Select(String table, String sqlWord)
         {
             DataSet dataSet = new DataSet();
