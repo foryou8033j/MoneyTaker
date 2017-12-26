@@ -45,11 +45,11 @@
             this.tabControl.Controls.Add(this.tabBuscar);
             this.tabControl.Controls.Add(this.tabTradeHistory);
             this.tabControl.Depth = 0;
-            this.tabControl.Location = new System.Drawing.Point(12, 29);
+            this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(676, 269);
+            this.tabControl.Size = new System.Drawing.Size(676, 286);
             this.tabControl.TabIndex = 0;
             // 
             // tabFriends
@@ -99,7 +99,7 @@
             this.tabTradeHistory.Location = new System.Drawing.Point(4, 22);
             this.tabTradeHistory.Name = "tabTradeHistory";
             this.tabTradeHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTradeHistory.Size = new System.Drawing.Size(668, 243);
+            this.tabTradeHistory.Size = new System.Drawing.Size(668, 260);
             this.tabTradeHistory.TabIndex = 3;
             this.tabTradeHistory.Text = "거래기록";
             // 
