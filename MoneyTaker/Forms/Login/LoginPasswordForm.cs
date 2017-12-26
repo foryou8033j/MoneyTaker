@@ -49,7 +49,7 @@ namespace MoneyTaker
                 }
                 else
                 {
-                    MessageBox.Show("로그인 성공!, 기존에 사용하던 유저이므로 여기서 최근 거래 기록 화면을 보여준다.");
+                    formManager.ShowTabBasicForm();
                 }
 
             }

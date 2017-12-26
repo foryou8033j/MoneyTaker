@@ -39,7 +39,6 @@ namespace MoneyTaker
         /// <param name="name"></param>
         public void UpdateUserName(String email, String name)
         {
-
             try
             {
                 MySqlCommand cmd = new MySqlCommand("UPDATE User SET Name = '" + name + "' WHERE Email = '" + email + "'", conn);
