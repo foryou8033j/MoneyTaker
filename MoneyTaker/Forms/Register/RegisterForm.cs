@@ -67,7 +67,7 @@ namespace MoneyTaker
             if (!sendEmail && (tbEmail.Text.Length < 5 || !tbEmail.Text.Contains("@")))
             {
                 //TODO : Material Design Alert 박스 오류있음. 수정 필요
-                formManager.ShowAlert(name, this, "오류", "올바른 이메일 주소를 입력 해 주세요.");
+                //formManager.ShowAlert(name, this, "오류", "올바른 이메일 주소를 입력 해 주세요.");
                 //new Alert(formManager.GetRootForm(), this, "오류", "올바른 이메일 주소를 입력 해 주세요.").Show();
 
                 lbnEmailNotification.Text = "올바른 이메일 주소를 입력 해 주세요.";
