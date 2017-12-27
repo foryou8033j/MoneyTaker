@@ -67,6 +67,12 @@
       <DependentUpon>Alert.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormExchangeManager.cs" />
+    <Compile Include="Forms\Login\InitInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\InitInformationForm.Designer.cs">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login\LoginPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\TabBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\TabBasicForm.Designer.cs">
+      <DependentUpon>TabBasicForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Propertise.cs" />
     <Compile Include="Program.cs" />
@@ -107,11 +119,17 @@
     <EmbeddedResource Include="Dialog\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\InitInformationForm.resx">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginPasswordForm.resx">
       <DependentUpon>LoginPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\TabBasicForm.resx">
+      <DependentUpon>TabBasicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,12 +176,11 @@
     <Content Include="docs\MySqlTransaction.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Borrow\" />
-    <Folder Include="Forms\Buscar\" />
-    <Folder Include="Forms\Friends\" />
-    <Folder Include="Forms\History\" />
-    <Folder Include="Forms\Information\" />
     <Folder Include="Forms\Setting\" />
+    <Folder Include="Forms\SubForm\Borrow\" />
+    <Folder Include="Forms\SubForm\Buscar\" />
+    <Folder Include="Forms\SubForm\Friends\" />
+    <Folder Include="Forms\SubForm\History\" />
     <Folder Include="Model\Friend\" />
     <Folder Include="Model\History\Borrow\" />
     <Folder Include="Model\History\Buscar\" />
