@@ -47,9 +47,9 @@ namespace MoneyTaker
 
         private async void RegisterForm_LoadAsync(object sender, EventArgs e)
         {
-
-            if (confirm)
-                tbEmail.Text = email;
+            //필요 없는 부분 주석 처리
+            //if (confirm)
+            //    tbEmail.Text = email;
 
             for (Width = 0; Width < 700; Width += 50)
                 await Task.Delay(1);
@@ -84,6 +84,7 @@ namespace MoneyTaker
 
                 new Thread(new ThreadStart(delegate ()
                 {
+
                     Cursor = Cursors.WaitCursor;
                     email = tbEmail.Text;
                     tbEmail.Enabled = false;

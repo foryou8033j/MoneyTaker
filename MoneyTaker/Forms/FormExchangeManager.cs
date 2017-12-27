@@ -103,7 +103,7 @@ namespace MoneyTaker
 
             AddPanel(registerForm);
         }
-
+      
         public void ShowAlert(String name, Form parent, String title, String contents)
         {
             Alert alert = new Alert(name, parent, title, contents);
@@ -111,6 +111,23 @@ namespace MoneyTaker
             //rootPanel.Location = rootPanel.
             
             AddPanel(alert);
+
+        public void ShowInitInformationForm()
+        {
+            InitInformationForm initInformationForm = new InitInformationForm();
+            initInformationForm.SetFormManager(this);
+            initInformationForm.TopLevel = false;
+
+            AddPanel(initInformationForm);
+        }
+
+        public void ShowTabBasicForm()
+        {
+            TabBasicForm tabBasicForm = new TabBasicForm();
+            tabBasicForm.SetFormManager(this);
+            tabBasicForm.TopLevel = false;
+
+            AddPanel(tabBasicForm);
         }
 
         public void ShowFindIdForm()
