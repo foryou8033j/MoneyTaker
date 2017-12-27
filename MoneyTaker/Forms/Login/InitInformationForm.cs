@@ -43,6 +43,7 @@ namespace MoneyTaker
             {
                 ((RootForm)formManager.GetRootForm()).AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
                 MessageBox.Show("성공!");
+                formManager.ShowTabBasicForm();
                 formManager.ShowFindIdForm();
             }
             else
