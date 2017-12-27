@@ -104,6 +104,15 @@ namespace MoneyTaker
             AddPanel(registerForm);
         }
 
+        public void ShowAlert(String name, Form parent, String title, String contents)
+        {
+            Alert alert = new Alert(name, parent, title, contents);
+            alert.SetFormManager(this);
+            //rootPanel.Location = rootPanel.
+            
+            AddPanel(alert);
+        }
+
         public void ShowFindIdForm()
         {
 
