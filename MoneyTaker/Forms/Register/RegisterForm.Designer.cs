@@ -203,36 +203,36 @@
             // 
             this.lbnEmailNotification.AutoSize = true;
             this.lbnEmailNotification.Depth = 0;
-            this.lbnEmailNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbnEmailNotification.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbnEmailNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbnEmailNotification.Location = new System.Drawing.Point(219, 128);
             this.lbnEmailNotification.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnEmailNotification.Name = "lbnEmailNotification";
-            this.lbnEmailNotification.Size = new System.Drawing.Size(0, 13);
+            this.lbnEmailNotification.Size = new System.Drawing.Size(0, 19);
             this.lbnEmailNotification.TabIndex = 8;
             // 
             // lbnPasswordSecurity
             // 
             this.lbnPasswordSecurity.AutoSize = true;
             this.lbnPasswordSecurity.Depth = 0;
-            this.lbnPasswordSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbnPasswordSecurity.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbnPasswordSecurity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbnPasswordSecurity.Location = new System.Drawing.Point(467, 150);
             this.lbnPasswordSecurity.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnPasswordSecurity.Name = "lbnPasswordSecurity";
-            this.lbnPasswordSecurity.Size = new System.Drawing.Size(0, 20);
+            this.lbnPasswordSecurity.Size = new System.Drawing.Size(0, 19);
             this.lbnPasswordSecurity.TabIndex = 9;
             // 
             // lbnPasswordNotification
             // 
             this.lbnPasswordNotification.AutoSize = true;
             this.lbnPasswordNotification.Depth = 0;
-            this.lbnPasswordNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbnPasswordNotification.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbnPasswordNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbnPasswordNotification.Location = new System.Drawing.Point(220, 170);
             this.lbnPasswordNotification.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnPasswordNotification.Name = "lbnPasswordNotification";
-            this.lbnPasswordNotification.Size = new System.Drawing.Size(0, 13);
+            this.lbnPasswordNotification.Size = new System.Drawing.Size(0, 19);
             this.lbnPasswordNotification.TabIndex = 10;
             // 
             // RegisterForm
