@@ -25,7 +25,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        public void SetFormManager(FormExchangeManager formManager)
+        internal void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
