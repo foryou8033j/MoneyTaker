@@ -32,6 +32,7 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelSetting1 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelSetting2 = new System.Windows.Forms.Panel();
@@ -42,7 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelSetting4 = new System.Windows.Forms.Panel();
             this.btnSettingSetting = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.panelSetting1 = new System.Windows.Forms.Panel();
+            this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -98,6 +99,14 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(662, 237);
             this.panel4.TabIndex = 0;
+            // 
+            // panelSetting1
+            // 
+            this.panelSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSetting1.Location = new System.Drawing.Point(0, 0);
+            this.panelSetting1.Name = "panelSetting1";
+            this.panelSetting1.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -193,17 +202,16 @@
             this.btnSettingSetting.Primary = true;
             this.btnSettingSetting.Size = new System.Drawing.Size(112, 23);
             this.btnSettingSetting.TabIndex = 2;
-            this.btnSettingSetting.Text = "설정";
+            this.btnSettingSetting.Text = "닫기";
             this.btnSettingSetting.UseVisualStyleBackColor = true;
             this.btnSettingSetting.Click += new System.EventHandler(this.btnSettingSetting_Click);
             // 
-            // panelSetting1
+            // mySqlDataAdapter1
             // 
-            this.panelSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting1.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting1.Name = "panelSetting1";
-            this.panelSetting1.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting1.TabIndex = 0;
+            this.mySqlDataAdapter1.DeleteCommand = null;
+            this.mySqlDataAdapter1.InsertCommand = null;
+            this.mySqlDataAdapter1.SelectCommand = null;
+            this.mySqlDataAdapter1.UpdateCommand = null;
             // 
             // TabSettingForm
             // 
@@ -248,5 +256,6 @@
         private System.Windows.Forms.Panel panelSetting3;
         private System.Windows.Forms.Panel panelSetting4;
         private System.Windows.Forms.Panel panelSetting1;
+        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
     }
 }
