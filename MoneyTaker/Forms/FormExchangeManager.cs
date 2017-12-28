@@ -122,15 +122,6 @@ namespace MoneyTaker
             AddPanel(tabBasicForm);
         }
 
-        public void ShowTabSettingForm()
-        {
-            TabSettingForm tabSettingForm = new TabSettingForm();
-            tabSettingForm.SetFormManager(this);
-            tabSettingForm.TopLevel = false;
-
-            AddPanel(tabSettingForm);
-        }
-
         public void ShowFindIdForm()
         {
 

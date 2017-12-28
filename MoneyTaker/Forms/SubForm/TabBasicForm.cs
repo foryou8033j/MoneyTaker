@@ -73,10 +73,5 @@ namespace MoneyTaker
 
             this.panelHistory.Controls.Add(historyForm);
         }
-
-        private void btnSettingFriend_Click(object sender, EventArgs e)
-        {
-            formManager.ShowTabSettingForm();
-        }
     }
 }
