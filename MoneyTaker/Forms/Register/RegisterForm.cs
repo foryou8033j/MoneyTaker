@@ -33,7 +33,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        internal void SetFormManager(FormExchangeManager formManager)
+        public void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
@@ -46,9 +46,9 @@ namespace MoneyTaker
 
         private async void RegisterForm_LoadAsync(object sender, EventArgs e)
         {
-            //필요 없는 부분 주석 처리
-            //if (confirm)
-            //    tbEmail.Text = email;
+
+            if (confirm)
+                tbEmail.Text = email;
 
             for (Width = 0; Width < 700; Width += 50)
                 await Task.Delay(1);
@@ -82,7 +82,6 @@ namespace MoneyTaker
 
                 new Thread(new ThreadStart(delegate ()
                 {
-
                     Cursor = Cursors.WaitCursor;
                     email = tbEmail.Text;
                     tbEmail.Enabled = false;

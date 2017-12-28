@@ -25,7 +25,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        internal void SetFormManager(FormExchangeManager formManager)
+        public void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
@@ -37,21 +37,7 @@ namespace MoneyTaker
             {
                 tbPassword.Text = received;
                 tbPassword.Enabled = false;
-
-
-                DataSet dataSet = ((RootForm)formManager.GetRootForm()).AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
-                DataRow datarow = dataSet.Tables[0].Rows[0];
-                String name = datarow["Name"].ToString();
-
-                if (name.Equals("") || name == null) //DB에 이름이 저장되어 있지 않다면 최초접속으로 가정하고 기본 정보를 받는 Form 으로 넘긴다
-                {
-                    formManager.ShowInitInformationForm();
-                }
-                else
-                {
-                    formManager.ShowTabBasicForm();
-                }
-
+                MessageBox.Show("성공!");
             }
         }
 
