@@ -85,6 +85,12 @@
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Setting\TabSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\TabSettingForm.Designer.cs">
+      <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SubForm\Borrow\BorrowForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\TabSettingForm.resx">
+      <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\Borrow\BorrowForm.resx">
       <DependentUpon>BorrowForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,7 +221,10 @@
     <Content Include="docs\MySqlTransaction.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Setting\" />
+    <Folder Include="Forms\Setting\NewFolder1\" />
+    <Folder Include="Forms\Setting\NewFolder2\" />
+    <Folder Include="Forms\Setting\NewFolder3\" />
+    <Folder Include="Forms\Setting\NewFolder4\" />
     <Folder Include="Model\Friend\" />
     <Folder Include="Model\History\Borrow\" />
     <Folder Include="Model\History\Buscar\" />
