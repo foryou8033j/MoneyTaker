@@ -34,15 +34,15 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panelSetting2 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelSetting3 = new System.Windows.Forms.Panel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSetting4 = new System.Windows.Forms.Panel();
             this.btnSettingSetting = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panelSetting1 = new System.Windows.Forms.Panel();
-            this.panelSetting2 = new System.Windows.Forms.Panel();
-            this.panelSetting3 = new System.Windows.Forms.Panel();
-            this.panelSetting4 = new System.Windows.Forms.Panel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -119,6 +119,14 @@
             this.panel3.Size = new System.Drawing.Size(662, 237);
             this.panel3.TabIndex = 0;
             // 
+            // panelSetting2
+            // 
+            this.panelSetting2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSetting2.Location = new System.Drawing.Point(0, 0);
+            this.panelSetting2.Name = "panelSetting2";
+            this.panelSetting2.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting2.TabIndex = 0;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -139,6 +147,14 @@
             this.panel2.Size = new System.Drawing.Size(662, 237);
             this.panel2.TabIndex = 0;
             // 
+            // panelSetting3
+            // 
+            this.panelSetting3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSetting3.Location = new System.Drawing.Point(0, 0);
+            this.panelSetting3.Name = "panelSetting3";
+            this.panelSetting3.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting3.TabIndex = 0;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -158,6 +174,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(662, 237);
             this.panel1.TabIndex = 0;
+            // 
+            // panelSetting4
+            // 
+            this.panelSetting4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSetting4.Location = new System.Drawing.Point(0, 0);
+            this.panelSetting4.Name = "panelSetting4";
+            this.panelSetting4.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting4.TabIndex = 0;
             // 
             // btnSettingSetting
             // 
@@ -180,30 +204,6 @@
             this.panelSetting1.Name = "panelSetting1";
             this.panelSetting1.Size = new System.Drawing.Size(662, 237);
             this.panelSetting1.TabIndex = 0;
-            // 
-            // panelSetting2
-            // 
-            this.panelSetting2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting2.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting2.Name = "panelSetting2";
-            this.panelSetting2.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting2.TabIndex = 0;
-            // 
-            // panelSetting3
-            // 
-            this.panelSetting3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting3.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting3.Name = "panelSetting3";
-            this.panelSetting3.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting3.TabIndex = 0;
-            // 
-            // panelSetting4
-            // 
-            this.panelSetting4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting4.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting4.Name = "panelSetting4";
-            this.panelSetting4.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting4.TabIndex = 0;
             // 
             // TabSettingForm
             // 
@@ -244,9 +244,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelSetting1;
         private System.Windows.Forms.Panel panelSetting2;
         private System.Windows.Forms.Panel panelSetting3;
         private System.Windows.Forms.Panel panelSetting4;
+        private System.Windows.Forms.Panel panelSetting1;
     }
 }
