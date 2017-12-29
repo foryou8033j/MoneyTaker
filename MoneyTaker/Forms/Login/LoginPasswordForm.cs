@@ -39,7 +39,7 @@ namespace MoneyTaker
                 tbPassword.Enabled = false;
 
 
-                DataSet dataSet = ((RootForm)formManager.GetRootForm()).AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
+                DataSet dataSet = formManager.GetRootFormClass().AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
                 DataRow datarow = dataSet.Tables[0].Rows[0];
                 String name = datarow["Name"].ToString();
 
@@ -64,11 +64,11 @@ namespace MoneyTaker
                 chbAutoLogin.Checked = true;
 
             //DB로부터 암호화된 패스워드 수신
-            DataSet dataSet = ((RootForm)formManager.GetRootForm()).AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
+            DataSet dataSet = formManager.GetRootFormClass().AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
             DataRow datarow = dataSet.Tables[0].Rows[0];
             encryptedPassword = datarow["Password"].ToString();
 
-            tbPassword.Focus();
+            
         }
 
         private void btnOtherUser_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace MoneyTaker
 
         private void tbPassword_TextChanged(object sender, EventArgs e)
         {
-            if(tbPassword.Text.Length > 6)
+            if (tbPassword.Text.Length > 6)
             {
                 CheckPassword(tbPassword.Text, encryptedPassword);
             }

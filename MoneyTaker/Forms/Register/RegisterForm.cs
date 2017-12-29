@@ -19,7 +19,6 @@ namespace MoneyTaker
         private bool sendEmail = false;
         private bool confirm = false;
         private String code = "";
-        private String name = "Register";
 
         private static String email = "";
 
@@ -76,7 +75,7 @@ namespace MoneyTaker
             else if (!sendEmail)
             {
 
-                if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text)){
+                if (formManager.GetRootFormClass().AccessDBManager().ExistUserEmail(tbEmail.Text)){
                     shakeControlAsync(tbEmail);
                     lbnEmailNotification.Text = "존재하는 이메일 입니다.";
                     return;
@@ -136,7 +135,7 @@ namespace MoneyTaker
 
             if(confirm && tbPassword.Text.Equals(tbPasswordReType.Text))
             {
-                if(((RootForm)formManager.GetRootForm()).AccessDBManager().InsertRegisterData(tbEmail.Text, tbPassword.Text))
+                if(formManager.GetRootFormClass().AccessDBManager().InsertRegisterData(tbEmail.Text, tbPassword.Text))
                 {
                     formManager.ShowLoginIdForm();
                 }

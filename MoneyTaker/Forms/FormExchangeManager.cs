@@ -50,6 +50,18 @@ namespace MoneyTaker
         public Form GetRootForm()
         {
             if (rootForm != null)
+                return (Form) rootForm; //Form 형태로 변환됨(부모)를 반환함을 명시적으로 지칭
+            else
+                return null;
+        }
+        
+        /// <summary>
+        /// RootForm을 원형 형태로 반환한다.
+        /// </summary>
+        /// <returns></returns>
+        public RootForm GetRootFormClass()
+        {
+            if (rootForm != null)
                 return rootForm;
             else
                 return null;
@@ -104,6 +116,7 @@ namespace MoneyTaker
             AddPanel(registerForm);
         }
 
+        [System.Obsolete("autor:김영우")]
         public void ShowAlert(String name, Form parent, String title, String contents)
         {
             Alert alert = new Alert(name, parent, title, contents);
