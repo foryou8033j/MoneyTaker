@@ -24,7 +24,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        public void SetFormManager(FormExchangeManager formManager)
+        internal void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
@@ -56,7 +56,7 @@ namespace MoneyTaker
         {
             if(tbEmail.Text.Length > 8)
             {
-                if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text))
+                if (formManager.GetRootFormClass().AccessDBManager().ExistUserEmail(tbEmail.Text))
                 {
                     USERConfig.EMAIL = tbEmail.Text;
                     formManager.ShowLoginPassForm();

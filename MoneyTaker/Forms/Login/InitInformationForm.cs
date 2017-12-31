@@ -24,9 +24,23 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        public void SetFormManager(FormExchangeManager formManager)
+        internal void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
+        }
+
+        private void SaveName()
+        {
+            if (!tbName.Text.Equals(""))
+            {
+                formManager.GetRootFormClass().AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
+                formManager.ShowTabBasicForm();
+                formManager.ShowFindIdForm();
+            }
+            else
+            {
+                shakeControlAsync(tbName);
+            }
         }
 
         private async void InitInformationForm_LoadAsync(object sender, EventArgs e)
@@ -39,16 +53,7 @@ namespace MoneyTaker
         {
             await Task.Delay(150);
 
-            if (!tbName.Text.Equals(""))
-            {
-                ((RootForm)formManager.GetRootForm()).AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
-                MessageBox.Show("성공!");
-                formManager.ShowFindIdForm();
-            }
-            else
-            {
-                shakeControlAsync(tbName);
-            }
+            SaveName();
 
         }
 
@@ -65,6 +70,14 @@ namespace MoneyTaker
             }
 
             control.Location = prefLocation;
+        }
+
+        private void tbName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                SaveName();
+            }
         }
     }
 }
