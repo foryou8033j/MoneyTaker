@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace MoneyTaker
 {
     /// <summary>
-    /// RootForm에 위치한 RootPanel의 내부 Control Form 변경을 위한 클래스 입니다.asdasdasd
+    /// RootForm에 위치한 RootPanel의 내부 Control Form 변경을 위한 클래스 입니다.
     /// Form Thread 가 아니므로 UI 작업에 주의 바랍니다.
     /// delecate 등을 통해 작업이 가능하긴 하지만 작업 전에 팀장에게 통보바랍니다.
     /// 

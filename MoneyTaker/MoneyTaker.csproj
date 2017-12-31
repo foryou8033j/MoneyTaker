@@ -121,9 +121,8 @@
     <Compile Include="Forms\SubForm\TabBasicForm.Designer.cs">
       <DependentUpon>TabBasicForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Friend\Friend.cs" />
-    <Compile Include="Model\History\Borrow\Borrow.cs" />
-    <Compile Include="Model\History\Buscar\Buscar.cs" />
+    <Compile Include="Model\History\IOU.cs" />
+    <Compile Include="Model\User\User.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Model\Propertise.cs" />
     <Compile Include="Program.cs" />
@@ -229,7 +228,6 @@
     <Folder Include="Forms\Setting\NewFolder2\" />
     <Folder Include="Forms\Setting\NewFolder3\" />
     <Folder Include="Forms\Setting\NewFolder4\" />
-    <Folder Include="Model\User\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
