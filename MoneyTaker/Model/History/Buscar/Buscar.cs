@@ -4,40 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+class Buscar
+{
+    String name;
+    int money;
+    DateTime startdate;
+    DateTime enddate;
+    String memo;
 
-    class Buscar
+    public Buscar(string name, int money, DateTime startdate, DateTime enddate, string memo)
     {
-        String name;
-        int money;
-        DateTime startdate, closingDate;
-        String memo;
-
-        public Buscar(String name, int money, DateTime startdate, DateTime closingDate)
-        {
-            this.name = name;
-            this.money = money;
-            this.startdate = startdate;
-            this.closingDate = closingDate;
-        }
-
-        public String getName()
-        {
-            return name;
-        }
-
-        public int getMoney()
-        {
-            return money;
-        }
-
-        public DateTime getStrirdate()
-        {
-            return startdate;
-        }
-
-        public DateTime getClosingDate()
-        {
-            return closingDate;
-        }
-
+        this.name = name;
+        this.money = money;
+        this.startdate = startdate;
+        this.enddate = enddate;
+        this.memo = memo;
     }
+
+    public string Name { get => name; set => name = value; }
+    public int Money { get => money; set => money = value; }
+    public DateTime Startdate { get => startdate; set => startdate = value; }
+    public DateTime Enddate { get => enddate; set => enddate = value; }
+    public string Memo { get => memo; set => memo = value; }
+}

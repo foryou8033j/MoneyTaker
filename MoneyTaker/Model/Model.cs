@@ -8,30 +8,19 @@ namespace MoneyTaker.Model
 {
     class Model
     {
-        List<Friend> Friends = new List<Friend>();
-        List<Borrow> BorrowData = new List<Borrow>();
-        List<Buscar> BuscarData = new List<Buscar>();
+        List<Friend> friends = new List<Friend>();
+        List<Borrow> borrowData = new List<Borrow>();
+        List<Buscar> buscarData = new List<Buscar>();
 
-        public Model(List<Friend> Friends, List<Borrow> BorrowData, List<Buscar> BuscarData)
+        public Model(List<Friend> friends, List<Borrow> borrowData, List<Buscar> buscarData)
         {
-            this.Friends = Friends;
-            this.BorrowData = BorrowData;
-            this.BuscarData = BuscarData;
-        }
-        public List<Friend> getFriends()
-        {
-            return Friends;
+            this.friends = friends;
+            this.borrowData = borrowData;
+            this.buscarData = buscarData;
         }
 
-        public List<Borrow> getBorrowData()
-        {
-            return BorrowData;
-        }
-
-        public List<Buscar> getBuscarData()
-        {
-            return BuscarData;
-        }
-
+        internal List<Friend> Friends { get => friends; set => friends = value; }
+        internal List<Borrow> BorrowData { get => borrowData; set => borrowData = value; }
+        internal List<Buscar> BuscarData { get => buscarData; set => buscarData = value; }
     }
 }
