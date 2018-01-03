@@ -53,11 +53,11 @@
             this.tabControl.Controls.Add(this.tabBuscar);
             this.tabControl.Controls.Add(this.tabTradeHistory);
             this.tabControl.Depth = 0;
-            this.tabControl.Location = new System.Drawing.Point(12, 29);
+            this.tabControl.Location = new System.Drawing.Point(-1, 29);
             this.tabControl.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(676, 269);
+            this.tabControl.Size = new System.Drawing.Size(717, 279);
             this.tabControl.TabIndex = 0;
             // 
             // tabFriends
@@ -67,7 +67,7 @@
             this.tabFriends.Location = new System.Drawing.Point(4, 22);
             this.tabFriends.Name = "tabFriends";
             this.tabFriends.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFriends.Size = new System.Drawing.Size(668, 243);
+            this.tabFriends.Size = new System.Drawing.Size(709, 253);
             this.tabFriends.TabIndex = 0;
             this.tabFriends.Text = "친구목록";
             // 
@@ -76,7 +76,7 @@
             this.panelFriend.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFriend.Location = new System.Drawing.Point(3, 3);
             this.panelFriend.Name = "panelFriend";
-            this.panelFriend.Size = new System.Drawing.Size(662, 237);
+            this.panelFriend.Size = new System.Drawing.Size(703, 247);
             this.panelFriend.TabIndex = 0;
             // 
             // tabBorrow

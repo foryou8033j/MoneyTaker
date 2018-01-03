@@ -29,6 +29,20 @@ namespace MoneyTaker
             this.formManager = formManager;
         }
 
+        private void SaveName()
+        {
+            if (!tbName.Text.Equals(""))
+            {
+                formManager.GetRootFormClass().AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
+                formManager.ShowTabBasicForm();
+                formManager.ShowFindIdForm();
+            }
+            else
+            {
+                shakeControlAsync(tbName);
+            }
+        }
+
         private async void InitInformationForm_LoadAsync(object sender, EventArgs e)
         {
             for (Width = 0; Width < 700; Width += 50)
@@ -39,17 +53,7 @@ namespace MoneyTaker
         {
             await Task.Delay(150);
 
-            if (!tbName.Text.Equals(""))
-            {
-                ((RootForm)formManager.GetRootForm()).AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
-                MessageBox.Show("성공!");
-                formManager.ShowTabBasicForm();
-                formManager.ShowFindIdForm();
-            }
-            else
-            {
-                shakeControlAsync(tbName);
-            }
+            SaveName();
 
         }
 
@@ -66,6 +70,14 @@ namespace MoneyTaker
             }
 
             control.Location = prefLocation;
+        }
+
+        private void tbName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                SaveName();
+            }
         }
     }
 }
