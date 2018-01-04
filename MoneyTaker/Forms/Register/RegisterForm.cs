@@ -66,7 +66,8 @@ namespace MoneyTaker
             if (!sendEmail && (tbEmail.Text.Length < 5 || !tbEmail.Text.Contains("@")))
             {
                 //TODO : Material Design Alert 박스 오류있음. 수정 필요
-                //new Alert(formManager.GetRootForm(), "오류", "올바른 이메일 주소를 입력 해 주세요.").Show();
+                //formManager.ShowAlert(name, this, "오류", "올바른 이메일 주소를 입력 해 주세요.");
+                //new Alert(formManager.GetRootForm(), this, "오류", "올바른 이메일 주소를 입력 해 주세요.").Show();
 
                 lbnEmailNotification.Text = "올바른 이메일 주소를 입력 해 주세요.";
                 shakeControlAsync(tbEmail);
@@ -74,7 +75,7 @@ namespace MoneyTaker
             else if (!sendEmail)
             {
 
-                if (((RootForm)formManager.GetRootForm()).AccessDBManager().ExistUserEmail(tbEmail.Text)){
+                if (formManager.GetRootFormClass().AccessDBManager().ExistUserEmail(tbEmail.Text)){
                     shakeControlAsync(tbEmail);
                     lbnEmailNotification.Text = "존재하는 이메일 입니다.";
                     return;
@@ -133,7 +134,7 @@ namespace MoneyTaker
 
             if(confirm && tbPassword.Text.Equals(tbPasswordReType.Text))
             {
-                if(((RootForm)formManager.GetRootForm()).AccessDBManager().InsertRegisterData(tbEmail.Text, tbPassword.Text))
+                if(formManager.GetRootFormClass().AccessDBManager().InsertRegisterData(tbEmail.Text, tbPassword.Text))
                 {
                     formManager.ShowLoginIdForm();
                 }

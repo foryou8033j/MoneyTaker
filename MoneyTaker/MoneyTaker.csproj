@@ -67,6 +67,12 @@
       <DependentUpon>Alert.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormExchangeManager.cs" />
+    <Compile Include="Forms\Login\InitInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\InitInformationForm.Designer.cs">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login\LoginPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,46 @@
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Setting\TabSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\TabSettingForm.Designer.cs">
+      <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\Borrow\BorrowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\Borrow\BorrowForm.Designer.cs">
+      <DependentUpon>BorrowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\Buscar\BuscarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\Buscar\BuscarForm.Designer.cs">
+      <DependentUpon>BuscarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\Friends\FriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\Friends\FriendForm.Designer.cs">
+      <DependentUpon>FriendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\History\HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\History\HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\TabBasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\TabBasicForm.Designer.cs">
+      <DependentUpon>TabBasicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Friend\Friend.cs" />
+    <Compile Include="Model\History\Borrow\Borrow.cs" />
+    <Compile Include="Model\History\Buscar\Buscar.cs" />
+    <Compile Include="Model\Model.cs" />
     <Compile Include="Model\Propertise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,11 +153,32 @@
     <EmbeddedResource Include="Dialog\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\InitInformationForm.resx">
+      <DependentUpon>InitInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginPasswordForm.resx">
       <DependentUpon>LoginPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\TabSettingForm.resx">
+      <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\Borrow\BorrowForm.resx">
+      <DependentUpon>BorrowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\Buscar\BuscarForm.resx">
+      <DependentUpon>BuscarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\Friends\FriendForm.resx">
+      <DependentUpon>FriendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\History\HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\TabBasicForm.resx">
+      <DependentUpon>TabBasicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,15 +225,10 @@
     <Content Include="docs\MySqlTransaction.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Borrow\" />
-    <Folder Include="Forms\Buscar\" />
-    <Folder Include="Forms\Friends\" />
-    <Folder Include="Forms\History\" />
-    <Folder Include="Forms\Information\" />
-    <Folder Include="Forms\Setting\" />
-    <Folder Include="Model\Friend\" />
-    <Folder Include="Model\History\Borrow\" />
-    <Folder Include="Model\History\Buscar\" />
+    <Folder Include="Forms\Setting\NewFolder1\" />
+    <Folder Include="Forms\Setting\NewFolder2\" />
+    <Folder Include="Forms\Setting\NewFolder3\" />
+    <Folder Include="Forms\Setting\NewFolder4\" />
     <Folder Include="Model\User\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

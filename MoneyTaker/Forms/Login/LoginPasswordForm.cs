@@ -25,7 +25,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        public void SetFormManager(FormExchangeManager formManager)
+        internal void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
@@ -37,7 +37,21 @@ namespace MoneyTaker
             {
                 tbPassword.Text = received;
                 tbPassword.Enabled = false;
-                MessageBox.Show("성공!");
+
+
+                DataSet dataSet = formManager.GetRootFormClass().AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
+                DataRow datarow = dataSet.Tables[0].Rows[0];
+                String name = datarow["Name"].ToString();
+
+                if (name.Equals("") || name == null) //DB에 이름이 저장되어 있지 않다면 최초접속으로 가정하고 기본 정보를 받는 Form 으로 넘긴다
+                {
+                    formManager.ShowInitInformationForm();
+                }
+                else
+                {
+                    formManager.ShowTabBasicForm();
+                }
+
             }
         }
 
@@ -50,11 +64,11 @@ namespace MoneyTaker
                 chbAutoLogin.Checked = true;
 
             //DB로부터 암호화된 패스워드 수신
-            DataSet dataSet = ((RootForm)formManager.GetRootForm()).AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
+            DataSet dataSet = formManager.GetRootFormClass().AccessDBManager().Select("User", "Email = '" + USERConfig.EMAIL + "'");
             DataRow datarow = dataSet.Tables[0].Rows[0];
             encryptedPassword = datarow["Password"].ToString();
 
-            tbPassword.Focus();
+            
         }
 
         private void btnOtherUser_Click(object sender, EventArgs e)
@@ -85,7 +99,7 @@ namespace MoneyTaker
 
         private void tbPassword_TextChanged(object sender, EventArgs e)
         {
-            if(tbPassword.Text.Length > 6)
+            if (tbPassword.Text.Length > 6)
             {
                 CheckPassword(tbPassword.Text, encryptedPassword);
             }

@@ -17,40 +17,50 @@ namespace MoneyTaker
     /// </summary>
     public partial class Alert : MaterialForm
     {
-        public Alert()
+        private FormExchangeManager formManager;
+        private String formName = "";
+
+        public Alert(String name, Form parent, String title, String contents)
         {
             InitializeComponent();
-        }
-
-        public Alert(Form parent, Exception e)
-        {
-
-            
-            InitializeComponent();
-
             TopLevel = false;
             Parent = parent;
-
-            this.Text = "Error";
-            lbnContents.Text = e.Message;
-        }
-
-        public Alert(Form parent, String title, String contents)
-        {
-            
-            InitializeComponent();
-
-            TopLevel = false;
-            Parent = parent;
-
-
             this.Text = title;  // 명시적 this 지칭
             lbnContents.Text = contents;
+            formName = name;
         }
+
+        public void SetFormManager(FormExchangeManager formManager)
+        {
+            this.formManager = formManager;
+        }
+
+        //public Alert(Form parent, Exception e)
+        //{
+        //    InitializeComponent();
+        //
+        //    TopLevel = false;
+        //    Parent = parent;
+        //    this.Text = "Error";
+        //    lbnContents.Text = e.Message;
+        //}
+
+        //public Alert(Form parent, RegisterForm rg, String title, String contents)
+        //{
+        //    InitializeComponent();
+        //
+        //    TopLevel = false;
+        //    Parent = parent;
+        //    this.Text = title;  // 명시적 this 지칭
+        //    lbnContents.Text = contents;
+        //}
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            Close();
+            if(formName == "Register")
+            {
+                formManager.ShowRegisterForm();
+            }
         }
 
         private void Alert_Load(object sender, EventArgs e)

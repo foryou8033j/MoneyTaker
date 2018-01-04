@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace MoneyTaker
 {
     /// <summary>
-    /// RootForm에 위치한 RootPanel의 내부 Control Form 변경을 위한 클래스 입니다.
+    /// RootForm에 위치한 RootPanel의 내부 Control Form 변경을 위한 클래스 입니다.asdasdasd
     /// Form Thread 가 아니므로 UI 작업에 주의 바랍니다.
     /// delecate 등을 통해 작업이 가능하긴 하지만 작업 전에 팀장에게 통보바랍니다.
     /// 
@@ -48,6 +48,18 @@ namespace MoneyTaker
         /// </summary>
         /// <returns></returns>
         public Form GetRootForm()
+        {
+            if (rootForm != null)
+                return (Form) rootForm; //Form 형태로 변환됨(부모)를 반환함을 명시적으로 지칭
+            else
+                return null;
+        }
+        
+        /// <summary>
+        /// RootForm을 원형 형태로 반환한다.
+        /// </summary>
+        /// <returns></returns>
+        public RootForm GetRootFormClass()
         {
             if (rootForm != null)
                 return rootForm;
@@ -102,6 +114,43 @@ namespace MoneyTaker
             registerForm.TopLevel = false;
 
             AddPanel(registerForm);
+        }
+
+        [System.Obsolete("autor:김영우")]
+        public void ShowAlert(String name, Form parent, String title, String contents)
+        {
+            Alert alert = new Alert(name, parent, title, contents);
+            alert.SetFormManager(this);
+            //rootPanel.Location = rootPanel.
+
+            AddPanel(alert);
+        }
+
+        public void ShowInitInformationForm()
+        {
+            InitInformationForm initInformationForm = new InitInformationForm();
+            initInformationForm.SetFormManager(this);
+            initInformationForm.TopLevel = false;
+
+            AddPanel(initInformationForm);
+        }
+
+        public void ShowTabBasicForm()
+        {
+            TabBasicForm tabBasicForm = new TabBasicForm();
+            tabBasicForm.SetFormManager(this);
+            tabBasicForm.TopLevel = false;
+
+            AddPanel(tabBasicForm);
+        }
+
+        public void ShowTabSettingForm()
+        {
+            TabSettingForm tabSettingForm = new TabSettingForm();
+            tabSettingForm.SetFormManager(this);
+            tabSettingForm.TopLevel = false;
+
+            AddPanel(tabSettingForm);
         }
 
         public void ShowFindIdForm()
