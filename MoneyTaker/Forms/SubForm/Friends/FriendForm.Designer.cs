@@ -32,9 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FriendData = new System.Windows.Forms.DataGridView();
+            this.FriendGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FriendName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FriendNick = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FriendEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FriendCredit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.FriendData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +59,10 @@
             this.FriendData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.FriendData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FriendData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FriendGroup,
             this.FriendName,
-            this.FriendNick,
-            this.FriendEmail});
+            this.FriendEmail,
+            this.FriendCredit});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -73,27 +75,39 @@
             this.FriendData.EnableHeadersVisualStyles = false;
             this.FriendData.Location = new System.Drawing.Point(0, 0);
             this.FriendData.Name = "FriendData";
+            this.FriendData.ReadOnly = true;
             this.FriendData.RowTemplate.Height = 23;
             this.FriendData.Size = new System.Drawing.Size(703, 237);
             this.FriendData.TabIndex = 0;
+            // 
+            // FriendGroup
+            // 
+            this.FriendGroup.HeaderText = "그룹";
+            this.FriendGroup.Name = "FriendGroup";
+            this.FriendGroup.ReadOnly = true;
+            this.FriendGroup.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FriendGroup.Width = 160;
             // 
             // FriendName
             // 
             this.FriendName.HeaderText = "이름";
             this.FriendName.Name = "FriendName";
-            this.FriendName.Width = 180;
-            // 
-            // FriendNick
-            // 
-            this.FriendNick.HeaderText = "닉네임";
-            this.FriendNick.Name = "FriendNick";
-            this.FriendNick.Width = 180;
+            this.FriendName.ReadOnly = true;
+            this.FriendName.Width = 160;
             // 
             // FriendEmail
             // 
             this.FriendEmail.HeaderText = "이메일";
             this.FriendEmail.Name = "FriendEmail";
-            this.FriendEmail.Width = 302;
+            this.FriendEmail.ReadOnly = true;
+            this.FriendEmail.Width = 182;
+            // 
+            // FriendCredit
+            // 
+            this.FriendCredit.HeaderText = "신용도";
+            this.FriendCredit.Name = "FriendCredit";
+            this.FriendCredit.ReadOnly = true;
+            this.FriendCredit.Width = 160;
             // 
             // FriendForm
             // 
@@ -113,8 +127,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView FriendData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FriendGroup;
         private System.Windows.Forms.DataGridViewTextBoxColumn FriendName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FriendNick;
         private System.Windows.Forms.DataGridViewTextBoxColumn FriendEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FriendCredit;
     }
 }
