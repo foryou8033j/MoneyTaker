@@ -13,6 +13,8 @@ namespace MoneyTaker
     public partial class TabBasicForm : Form
     {
         private FormExchangeManager formManager;
+        private int panelHeight;
+        private bool panelHide;
 
         public TabBasicForm()
         {
@@ -21,6 +23,9 @@ namespace MoneyTaker
             ShowBuscarForm();
             ShowBorrowForm();
             ShowHistoryForm();
+
+            panelHeight = this.panelSetting.Height;
+            panelHide = true;
         }
 
         /// <summary>
@@ -76,7 +81,6 @@ namespace MoneyTaker
 
         private async void btnSettingFriend_ClickAsync(object sender, EventArgs e)
         {
-
             await Task.Delay(150);
 
             formManager.ShowTabSettingForm();
@@ -91,6 +95,44 @@ namespace MoneyTaker
         private async void btnAddDeal_Click(object sender, EventArgs e)
         {
             await Task.Delay(150);
+        }
+
+        private void btnShowSetting_Click(object sender, EventArgs e)
+        {
+            if(panelHide)
+            {
+                this.tmSetting.Start();
+                this.btnShowSetting.Text = "▲";
+            }
+            else
+            {
+                this.tmSetting.Start();
+                this.btnShowSetting.Text = "▼";
+            }            
+        }
+
+        private void tmSetting_Tick(object sender, EventArgs e)
+        {
+            if(panelHide)
+            {
+                this.panelSetting.Height = this.panelSetting.Height + 5;
+                if(this.panelSetting.Height == 150)
+                {
+                    this.tmSetting.Stop();
+                    panelHide = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                this.panelSetting.Height = this.panelSetting.Height - 5;
+                if(this.panelSetting.Height == panelHeight)
+                {
+                    this.tmSetting.Stop();
+                    panelHide = true;
+                    this.Refresh();
+                }
+            }
         }
     }
 }
