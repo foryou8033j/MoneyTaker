@@ -74,9 +74,23 @@ namespace MoneyTaker
             this.panelHistory.Controls.Add(historyForm);
         }
 
-        private void btnSettingFriend_Click(object sender, EventArgs e)
+        private async void btnSettingFriend_ClickAsync(object sender, EventArgs e)
         {
+
+            await Task.Delay(150);
+
             formManager.ShowTabSettingForm();
+        }
+
+        private async void btnAddFriend_ClickAsync(object sender, EventArgs e)
+        {
+            await Task.Delay(150);
+
+        }
+
+        private async void btnAddDeal_Click(object sender, EventArgs e)
+        {
+            await Task.Delay(150);
         }
     }
 }

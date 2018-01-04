@@ -30,8 +30,10 @@ namespace MoneyTaker
                 await Task.Delay(1);
         }
 
-        private void btnSettingSetting_Click(object sender, EventArgs e)
+        private async void btnSettingSetting_Click(object sender, EventArgs e)
         {
+            await Task.Delay(150);
+
             formManager.ShowTabBasicForm();
         }
     }
