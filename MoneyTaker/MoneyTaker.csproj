@@ -223,6 +223,7 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
+    <None Include="Resources\magnifier.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\Setting\NewFolder1\" />

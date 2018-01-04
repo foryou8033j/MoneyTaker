@@ -41,11 +41,14 @@
             this.btnSettingFriend = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnAddFriend = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnAddDeal = new MaterialSkin.Controls.MaterialFlatButton();
+            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabFriends.SuspendLayout();
             this.tabBorrow.SuspendLayout();
             this.tabBuscar.SuspendLayout();
             this.tabTradeHistory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -195,12 +198,39 @@
             this.btnAddDeal.UseVisualStyleBackColor = true;
             this.btnAddDeal.Click += new System.EventHandler(this.btnAddDeal_Click);
             // 
+            // materialSingleLineTextField1
+            // 
+            this.materialSingleLineTextField1.Depth = 0;
+            this.materialSingleLineTextField1.Hint = "검색";
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(612, 50);
+            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
+            this.materialSingleLineTextField1.PasswordChar = '\0';
+            this.materialSingleLineTextField1.SelectedText = "";
+            this.materialSingleLineTextField1.SelectionLength = 0;
+            this.materialSingleLineTextField1.SelectionStart = 0;
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(89, 23);
+            this.materialSingleLineTextField1.TabIndex = 6;
+            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MoneyTaker.Properties.Resources.magnifier;
+            this.pictureBox1.Location = new System.Drawing.Point(588, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // TabBasicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(700, 310);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.btnAddDeal);
             this.Controls.Add(this.btnAddFriend);
             this.Controls.Add(this.btnSettingFriend);
@@ -215,6 +245,7 @@
             this.tabBorrow.ResumeLayout(false);
             this.tabBuscar.ResumeLayout(false);
             this.tabTradeHistory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +266,7 @@
         private System.Windows.Forms.Panel panelHistory;
         private MaterialSkin.Controls.MaterialFlatButton btnAddFriend;
         private MaterialSkin.Controls.MaterialFlatButton btnAddDeal;
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
