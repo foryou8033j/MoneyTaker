@@ -37,7 +37,7 @@
             this.HistoryMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HistoryDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HistoryEnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HistoryDday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HistoryMemo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.HistoryData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             this.HistoryData.AllowUserToResizeColumns = false;
             this.HistoryData.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(238,239,249);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.HistoryData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.HistoryData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.HistoryData.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -66,12 +66,12 @@
             this.HistoryMoney,
             this.HistoryDate,
             this.HistoryEnd,
-            this.HistoryDday});
+            this.HistoryMemo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.HistoryData.DefaultCellStyle = dataGridViewCellStyle3;
@@ -79,6 +79,7 @@
             this.HistoryData.EnableHeadersVisualStyles = false;
             this.HistoryData.Location = new System.Drawing.Point(0, 0);
             this.HistoryData.Name = "HistoryData";
+            this.HistoryData.ReadOnly = true;
             this.HistoryData.RowTemplate.Height = 23;
             this.HistoryData.Size = new System.Drawing.Size(703, 237);
             this.HistoryData.TabIndex = 0;
@@ -87,33 +88,39 @@
             // 
             this.HistoryBuscar.HeaderText = "빌린 사람";
             this.HistoryBuscar.Name = "HistoryBuscar";
+            this.HistoryBuscar.ReadOnly = true;
             // 
             // HistoryBorrow
             // 
             this.HistoryBorrow.HeaderText = "빌려준 사람";
             this.HistoryBorrow.Name = "HistoryBorrow";
+            this.HistoryBorrow.ReadOnly = true;
             // 
             // HistoryMoney
             // 
             this.HistoryMoney.HeaderText = "금액";
             this.HistoryMoney.Name = "HistoryMoney";
+            this.HistoryMoney.ReadOnly = true;
             // 
             // HistoryDate
             // 
             this.HistoryDate.HeaderText = "빌린/빌려준 날짜";
             this.HistoryDate.Name = "HistoryDate";
+            this.HistoryDate.ReadOnly = true;
             this.HistoryDate.Width = 132;
             // 
             // HistoryEnd
             // 
             this.HistoryEnd.HeaderText = "갚은 날짜";
             this.HistoryEnd.Name = "HistoryEnd";
-            this.HistoryEnd.Width = 130;
+            this.HistoryEnd.ReadOnly = true;
             // 
-            // HistoryDday
+            // HistoryMemo
             // 
-            this.HistoryDday.HeaderText = "걸린 기한";
-            this.HistoryDday.Name = "HistoryDday";
+            this.HistoryMemo.HeaderText = "메모";
+            this.HistoryMemo.Name = "HistoryMemo";
+            this.HistoryMemo.ReadOnly = true;
+            this.HistoryMemo.Width = 130;
             // 
             // HistoryForm
             // 
@@ -138,6 +145,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HistoryMoney;
         private System.Windows.Forms.DataGridViewTextBoxColumn HistoryDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn HistoryEnd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HistoryDday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HistoryMemo;
     }
 }

@@ -38,6 +38,7 @@
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.10.5\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -121,8 +122,9 @@
     <Compile Include="Forms\SubForm\TabBasicForm.Designer.cs">
       <DependentUpon>TabBasicForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\History\IOU.cs" />
-    <Compile Include="Model\User\User.cs" />
+    <Compile Include="Model\Friend\Friend.cs" />
+    <Compile Include="Model\History\Borrow\Borrow.cs" />
+    <Compile Include="Model\History\Buscar\Buscar.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Model\Propertise.cs" />
     <Compile Include="Program.cs" />
@@ -222,12 +224,14 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
+    <None Include="Resources\magnifier.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\Setting\NewFolder1\" />
     <Folder Include="Forms\Setting\NewFolder2\" />
     <Folder Include="Forms\Setting\NewFolder3\" />
     <Folder Include="Forms\Setting\NewFolder4\" />
+    <Folder Include="Model\User\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
