@@ -30,6 +30,6 @@ namespace MoneyTaker
         public static readonly String SERVER = "alcoholcoding.com";
         public static readonly String DB = "MoneyTaker";
         public static readonly String ID = "MoneyTaker";
-        public static readonly String PASSWORD = "9k5rmf\\ht1a";
+        public static readonly String PASSWORD = @"9k5rmf\ht1a";
     }
 }

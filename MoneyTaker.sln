@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTaker", "MoneyTaker\MoneyTaker.csproj", "{D1FE0EF5-33C7-42BB-A2BB-2CCB34F6E845}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseSettings", "DatabaseSettings", "{69D95DEA-024C-44B6-AE66-868687C1323E}"
+	ProjectSection(SolutionItems) = preProject
+		DBSettings\readme.md = DBSettings\readme.md
+		DBSettings\TableSqlQuery.sql = DBSettings\TableSqlQuery.sql
+		DBSettings\TriggerSqlQuery.sql = DBSettings\TriggerSqlQuery.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

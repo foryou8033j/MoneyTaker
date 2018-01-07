@@ -31,7 +31,7 @@ namespace MoneyTaker
 
         private void SaveName()
         {
-            if (!tbName.Text.Equals(""))
+            if (ClarifyManager.IsName(tbName.Text))
             {
                 formManager.GetRootFormClass().AccessDBManager().UpdateUserName(USERConfig.EMAIL, tbName.Text);
                 formManager.ShowTabBasicForm();
