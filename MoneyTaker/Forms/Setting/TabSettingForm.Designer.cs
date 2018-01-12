@@ -32,7 +32,7 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelSetting1 = new System.Windows.Forms.Panel();
+            this.panelMyinfo = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelSetting2 = new System.Windows.Forms.Panel();
@@ -73,11 +73,11 @@
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(12, 28);
+            this.materialTabControl1.Location = new System.Drawing.Point(-1, 45);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(676, 269);
+            this.materialTabControl1.Size = new System.Drawing.Size(700, 260);
             this.materialTabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -87,26 +87,26 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(668, 243);
+            this.tabPage1.Size = new System.Drawing.Size(692, 234);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "설정1";
+            this.tabPage1.Text = "내 정보";
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panelSetting1);
+            this.panel4.Controls.Add(this.panelMyinfo);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(662, 237);
+            this.panel4.Size = new System.Drawing.Size(686, 228);
             this.panel4.TabIndex = 0;
             // 
-            // panelSetting1
+            // panelMyinfo
             // 
-            this.panelSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting1.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting1.Name = "panelSetting1";
-            this.panelSetting1.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting1.TabIndex = 0;
+            this.panelMyinfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMyinfo.Location = new System.Drawing.Point(0, 0);
+            this.panelMyinfo.Name = "panelMyinfo";
+            this.panelMyinfo.Size = new System.Drawing.Size(686, 228);
+            this.panelMyinfo.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -115,7 +115,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(668, 243);
+            this.tabPage2.Size = new System.Drawing.Size(716, 268);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "설정2";
             // 
@@ -125,7 +125,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(662, 237);
+            this.panel3.Size = new System.Drawing.Size(710, 262);
             this.panel3.TabIndex = 0;
             // 
             // panelSetting2
@@ -133,7 +133,7 @@
             this.panelSetting2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSetting2.Location = new System.Drawing.Point(0, 0);
             this.panelSetting2.Name = "panelSetting2";
-            this.panelSetting2.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting2.Size = new System.Drawing.Size(710, 262);
             this.panelSetting2.TabIndex = 0;
             // 
             // tabPage3
@@ -143,7 +143,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(668, 243);
+            this.tabPage3.Size = new System.Drawing.Size(716, 252);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "설정3";
             // 
@@ -153,7 +153,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(662, 237);
+            this.panel2.Size = new System.Drawing.Size(710, 246);
             this.panel2.TabIndex = 0;
             // 
             // panelSetting3
@@ -161,7 +161,7 @@
             this.panelSetting3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSetting3.Location = new System.Drawing.Point(0, 0);
             this.panelSetting3.Name = "panelSetting3";
-            this.panelSetting3.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting3.Size = new System.Drawing.Size(710, 246);
             this.panelSetting3.TabIndex = 0;
             // 
             // tabPage4
@@ -171,7 +171,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(668, 243);
+            this.tabPage4.Size = new System.Drawing.Size(716, 252);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "설정4";
             // 
@@ -181,7 +181,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(662, 237);
+            this.panel1.Size = new System.Drawing.Size(710, 246);
             this.panel1.TabIndex = 0;
             // 
             // panelSetting4
@@ -189,7 +189,7 @@
             this.panelSetting4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSetting4.Location = new System.Drawing.Point(0, 0);
             this.panelSetting4.Name = "panelSetting4";
-            this.panelSetting4.Size = new System.Drawing.Size(662, 237);
+            this.panelSetting4.Size = new System.Drawing.Size(710, 246);
             this.panelSetting4.TabIndex = 0;
             // 
             // btnSettingSetting
@@ -220,8 +220,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(700, 310);
             this.Controls.Add(this.btnSettingSetting);
-            this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.materialTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TabSettingForm";
             this.Text = "TabSettingForm";
@@ -255,7 +255,7 @@
         private System.Windows.Forms.Panel panelSetting2;
         private System.Windows.Forms.Panel panelSetting3;
         private System.Windows.Forms.Panel panelSetting4;
-        private System.Windows.Forms.Panel panelSetting1;
+        private System.Windows.Forms.Panel panelMyinfo;
         private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
     }
 }

@@ -86,6 +86,12 @@
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Setting\MyInfor\MyInforForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\MyInfor\MyInforForm.Designer.cs">
+      <DependentUpon>MyInforForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Setting\TabSettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     </Compile>
     <Compile Include="Forms\SubForm\History\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\Plus\PlusFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\Plus\PlusFriendForm.Designer.cs">
+      <DependentUpon>PlusFriendForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SubForm\TabBasicForm.cs">
       <SubType>Form</SubType>
@@ -164,6 +176,9 @@
     <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\MyInfor\MyInforForm.resx">
+      <DependentUpon>MyInforForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Setting\TabSettingForm.resx">
       <DependentUpon>TabSettingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\History\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\Plus\PlusFriendForm.resx">
+      <DependentUpon>PlusFriendForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\TabBasicForm.resx">
       <DependentUpon>TabBasicForm.cs</DependentUpon>
@@ -228,7 +246,6 @@
     <None Include="Resources\magnifier.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Setting\NewFolder1\" />
     <Folder Include="Forms\Setting\NewFolder2\" />
     <Folder Include="Forms\Setting\NewFolder3\" />
     <Folder Include="Forms\Setting\NewFolder4\" />
