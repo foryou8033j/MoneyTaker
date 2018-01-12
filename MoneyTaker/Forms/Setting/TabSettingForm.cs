@@ -17,6 +17,7 @@ namespace MoneyTaker
         public TabSettingForm()
         {
             InitializeComponent();
+            ShowInformationForm();
         }
 
         internal void SetFormManager(FormExchangeManager formManager)
@@ -35,6 +36,15 @@ namespace MoneyTaker
             await Task.Delay(150);
 
             formManager.ShowTabBasicForm();
+        }
+
+        public void ShowInformationForm()
+        {
+            MyInforForm myInforForm = new MyInforForm();
+            myInforForm.TopLevel = false;
+            myInforForm.Show();
+
+            this.panelMyinfo.Controls.Add(myInforForm);
         }
     }
 }

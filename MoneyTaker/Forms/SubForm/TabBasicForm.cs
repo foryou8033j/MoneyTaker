@@ -32,7 +32,7 @@ namespace MoneyTaker
         /// Form Manager와 연동합니다.
         /// </summary>
         /// <param name="formManager"></param>
-        public void SetFormManager(FormExchangeManager formManager)
+        internal void SetFormManager(FormExchangeManager formManager)
         {
             this.formManager = formManager;
         }
@@ -116,7 +116,7 @@ namespace MoneyTaker
             if(panelHide)
             {
                 this.panelSetting.Height = this.panelSetting.Height + 5;
-                if(this.panelSetting.Height == 150)
+                if(this.panelSetting.Height == 80)
                 {
                     this.tmSetting.Stop();
                     panelHide = false;
@@ -133,6 +133,11 @@ namespace MoneyTaker
                     this.Refresh();
                 }
             }
+        }
+
+        private void btnAddFriend_Click(object sender, EventArgs e)
+        {
+            formManager.ShowPlusFriendForm();
         }
     }
 }
