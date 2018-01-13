@@ -25,7 +25,6 @@ namespace MoneyTaker
             this.friends = friends;
             this.borrowData = borrowData;
             this.buscarData = buscarData;
-
         }
 
         public void Load()
