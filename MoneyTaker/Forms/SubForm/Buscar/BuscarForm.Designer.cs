@@ -126,6 +126,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BuscarForm";
             this.Text = "BuscarForm";
+            this.Load += new System.EventHandler(this.BuscarForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BuscarData)).EndInit();
             this.ResumeLayout(false);
 

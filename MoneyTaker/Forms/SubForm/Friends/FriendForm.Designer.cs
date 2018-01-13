@@ -119,6 +119,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FriendForm";
             this.Text = "FriendForm";
+            this.Load += new System.EventHandler(this.FriendForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FriendData)).EndInit();
             this.ResumeLayout(false);
 

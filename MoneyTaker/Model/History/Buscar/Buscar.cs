@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class Buscar
+public class Buscar
 {
     String name;
     int money;
