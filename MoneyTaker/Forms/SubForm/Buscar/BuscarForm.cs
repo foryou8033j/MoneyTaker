@@ -30,9 +30,13 @@ namespace MoneyTaker
 
         private void BuscarForm_Load(object sender, EventArgs e)
         {
+
+            formManager.GetRootFormClass().AccessModel().Load();
+
+            BuscarData.Rows.Clear();
+
             foreach (Buscar item in formManager.GetRootFormClass().AccessModel().BuscarData)
             {
-
                 string[] row = { item.Name, item.Money.ToString(), item.Startdate.ToString(), item.Enddate.ToString(), item.Memo };
                 BuscarData.Rows.Add(row);
 

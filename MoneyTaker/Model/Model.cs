@@ -10,6 +10,7 @@ namespace MoneyTaker
 {
     public class Model
     {
+
         List<Friend> friends = new List<Friend>();
         List<Borrow> borrowData = new List<Borrow>();
         List<Buscar> buscarData = new List<Buscar>();
@@ -27,13 +28,23 @@ namespace MoneyTaker
             this.buscarData = buscarData;
         }
 
+        internal List<Friend> Friends { get => friends; set => friends = value; }
+        internal List<Borrow> BorrowData { get => borrowData; set => borrowData = value; }
+        internal List<Buscar> BuscarData { get => buscarData; set => buscarData = value; }
+
+
+        /** 아래로 파일 저장 파트 **/
         public void Load()
         {
-
             try
             {
+                friends.Clear();
+                borrowData.Clear();
+                buscarData.Clear();
+
                 XmlDocument xml = new XmlDocument();
-                xml.Load("D:\\data.xml");
+                xml.Load(Propertise.MODEL_PATH);
+
                 XmlNodeList root1 = xml.SelectNodes("/Models/Borrow/Item");
                 XmlNodeList root2 = xml.SelectNodes("/Models/Buscar/Item");
                 XmlNodeList root3 = xml.SelectNodes("/Models/Friend/Item");
@@ -66,22 +77,15 @@ namespace MoneyTaker
                 }
             }catch (Exception e)
             {
-                
+                // ignore
+                // 파일이 존재하지않는경우 프로그램 최초시작에 Exception 발생 가능
+                // 추후 상황에 따른 Exception 처리 필요
+                // TODO : 추후 상황에 따른 Exception 처리 필요, 20180113 서정삼
             }
-            
-            
         }
 
         public void Save()
         {
-            buscarData.Add(new Buscar("서정삼", 5000, DateTime.Now, DateTime.Now, "육개장"));
-            buscarData.Add(new Buscar("홍지원", 50000, DateTime.Now, DateTime.Now, "다이아몬드"));
-            buscarData.Add(new Buscar("김정은", 500000, DateTime.Now, DateTime.Now, "미사일"));
-            borrowData.Add(new Borrow("서정삼", 5000, DateTime.Now, DateTime.Now, "육개장"));
-            borrowData.Add(new Borrow("홍지원", 50000, DateTime.Now, DateTime.Now, "다이아몬드"));
-            borrowData.Add(new Borrow("김정은", 500000, DateTime.Now, DateTime.Now, "미사일"));
-            friends.Add(new Friend("홍지원", "wldnjs8236@naver.com", "친구", 10," "," ",0));
-            friends.Add(new Friend("서정삼", "xxxxxx@naver.com", "친구", 10, " ", " ", 0));
 
             XmlDocument xml = new XmlDocument();
             XmlNode root = xml.CreateElement("Models");
@@ -182,12 +186,10 @@ namespace MoneyTaker
             }
             root.AppendChild(friendsRoot);
 
-            xml.Save("D:\\data.xml");
+            xml.Save(Propertise.MODEL_PATH);
 
         }
 
-        internal List<Friend> Friends { get => friends; set => friends = value; }
-        internal List<Borrow> BorrowData { get => borrowData; set => borrowData = value; }
-        internal List<Buscar> BuscarData { get => buscarData; set => buscarData = value; }
+        
     }
 }

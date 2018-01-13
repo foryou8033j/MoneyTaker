@@ -30,12 +30,15 @@ namespace MoneyTaker
 
         private void FriendForm_Load(object sender, EventArgs e)
         {
-            foreach (Friend item in formManager.GetRootFormClass().AccessModel().Friends)
-            {
 
+            formManager.GetRootFormClass().AccessModel().Load();
+
+            FriendData.Rows.Clear();
+
+            foreach (Friend item in formManager.GetRootFormClass().AccessModel().Friends)
+            { 
                 string[] row = { item.Group, item.Name, item.Email, item.Credibility.ToString() };
                 FriendData.Rows.Add(row);
-
             }
         }
     }

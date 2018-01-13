@@ -26,6 +26,17 @@ using System.Threading.Tasks;
         this.tag = tag;
     }
 
+    public Friend(string name)
+    {
+        this.name = name;
+        this.email = "";
+        this.group = "";
+        this.credibility = 0;
+        this.uguid = "";
+        this.gguid = "";
+        this.tag = 0;
+    }
+
     public string Name { get => name; set => name = value; }
     public string Email { get => email; set => email = value; }
     public string Group { get => group; set => group = value; }

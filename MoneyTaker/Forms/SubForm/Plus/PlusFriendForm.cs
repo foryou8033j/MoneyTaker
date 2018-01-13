@@ -31,20 +31,8 @@ namespace MoneyTaker
 
             string[] data = { "오프라인", "온라인" };
 
-            this.cbOnOff.Items.AddRange(data);
-            this.cbOnOff.SelectedIndex = 0;
-        }
-
-        private void cbOnOff_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(this.cbOnOff.SelectedIndex == 0)
-            {
-                this.tbPlus.Hint = "이름";
-            }
-            else
-            {
-                this.tbPlus.Hint = "이름 / 태그 / 이메일";
-            }
+            this.cbMode.Items.AddRange(data);
+            this.cbMode.SelectedIndex = 0;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -52,8 +40,23 @@ namespace MoneyTaker
             formManager.ShowTabBasicForm();
         }
 
-        private void btnPlus_Click(object sender, EventArgs e)
+        private void cbMode_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (this.cbMode.SelectedIndex == 0)
+            {
+                this.tbName.Hint = "이름";
+            }
+            else
+            {
+                this.tbName.Hint = "이름 / 태그 / 이메일";
+            }
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            formManager.GetRootFormClass().AccessModel().Friends.Add(new Friend(tbName.Text));
+
+            formManager.GetRootFormClass().AccessModel().Save();
             formManager.ShowTabBasicForm();
         }
     }

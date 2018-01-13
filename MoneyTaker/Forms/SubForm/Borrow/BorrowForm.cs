@@ -32,18 +32,15 @@ namespace MoneyTaker
 
         private void BorrowForm_Load(object sender, EventArgs e)
         {
-            //formManager.GetRootFormClass().AccessModel().Load();
+            formManager.GetRootFormClass().AccessModel().Load();
+
+            BorrowData.Rows.Clear();
 
             foreach(Borrow item in formManager.GetRootFormClass().AccessModel().BorrowData)
             {
-
                 string[] row = { item.Name, item.Money.ToString(), item.Startdate.ToString(), item.Enddate.ToString(), item.Memo };
-                //MessageBox.Show(row.ToString());
                 BorrowData.Rows.Add(row);
-
             }
-
-
         }
     }
 }

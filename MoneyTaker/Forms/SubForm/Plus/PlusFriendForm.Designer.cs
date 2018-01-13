@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbPlus = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnPlus = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tbName = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btnOk = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCancel = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.cbOnOff = new System.Windows.Forms.ComboBox();
+            this.cbMode = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // tbPlus
+            // tbName
             // 
-            this.tbPlus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPlus.Depth = 0;
-            this.tbPlus.Hint = "이름";
-            this.tbPlus.Location = new System.Drawing.Point(251, 132);
-            this.tbPlus.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tbPlus.Name = "tbPlus";
-            this.tbPlus.PasswordChar = '\0';
-            this.tbPlus.SelectedText = "";
-            this.tbPlus.SelectionLength = 0;
-            this.tbPlus.SelectionStart = 0;
-            this.tbPlus.Size = new System.Drawing.Size(242, 23);
-            this.tbPlus.TabIndex = 0;
-            this.tbPlus.UseSystemPasswordChar = false;
+            this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbName.Depth = 0;
+            this.tbName.Hint = "이름";
+            this.tbName.Location = new System.Drawing.Point(251, 132);
+            this.tbName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbName.Name = "tbName";
+            this.tbName.PasswordChar = '\0';
+            this.tbName.SelectedText = "";
+            this.tbName.SelectionLength = 0;
+            this.tbName.SelectionStart = 0;
+            this.tbName.Size = new System.Drawing.Size(242, 23);
+            this.tbName.TabIndex = 0;
+            this.tbName.UseSystemPasswordChar = false;
             // 
-            // btnPlus
+            // btnOk
             // 
-            this.btnPlus.Depth = 0;
-            this.btnPlus.Location = new System.Drawing.Point(251, 203);
-            this.btnPlus.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Primary = true;
-            this.btnPlus.Size = new System.Drawing.Size(104, 23);
-            this.btnPlus.TabIndex = 2;
-            this.btnPlus.Text = "확  인";
-            this.btnPlus.UseVisualStyleBackColor = true;
-            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            this.btnOk.Depth = 0;
+            this.btnOk.Location = new System.Drawing.Point(251, 203);
+            this.btnOk.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Primary = true;
+            this.btnOk.Size = new System.Drawing.Size(104, 23);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "확  인";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -76,20 +76,20 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // cbOnOff
+            // cbMode
             // 
-            this.cbOnOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.cbOnOff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbOnOff.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cbOnOff.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.cbOnOff.FormattingEnabled = true;
-            this.cbOnOff.Location = new System.Drawing.Point(138, 132);
-            this.cbOnOff.MaxDropDownItems = 2;
-            this.cbOnOff.Name = "cbOnOff";
-            this.cbOnOff.Size = new System.Drawing.Size(93, 20);
-            this.cbOnOff.TabIndex = 4;
-            this.cbOnOff.SelectedIndexChanged += new System.EventHandler(this.cbOnOff_SelectedIndexChanged);
+            this.cbMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.cbMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMode.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cbMode.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.cbMode.FormattingEnabled = true;
+            this.cbMode.Location = new System.Drawing.Point(138, 132);
+            this.cbMode.MaxDropDownItems = 2;
+            this.cbMode.Name = "cbMode";
+            this.cbMode.Size = new System.Drawing.Size(93, 20);
+            this.cbMode.TabIndex = 4;
+            this.cbMode.SelectedIndexChanged += new System.EventHandler(this.cbMode_SelectedIndexChanged);
             // 
             // PlusFriendForm
             // 
@@ -97,10 +97,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(700, 310);
-            this.Controls.Add(this.cbOnOff);
+            this.Controls.Add(this.cbMode);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnPlus);
-            this.Controls.Add(this.tbPlus);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.tbName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PlusFriendForm";
             this.Text = "PlusFriendForm";
@@ -111,9 +111,9 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialSingleLineTextField tbPlus;
-        private MaterialSkin.Controls.MaterialRaisedButton btnPlus;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbName;
+        private MaterialSkin.Controls.MaterialRaisedButton btnOk;
         private MaterialSkin.Controls.MaterialRaisedButton btnCancel;
-        private System.Windows.Forms.ComboBox cbOnOff;
+        private System.Windows.Forms.ComboBox cbMode;
     }
 }

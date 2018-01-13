@@ -9,9 +9,11 @@ namespace MoneyTaker
     
     public class Propertise
     {
-        public static readonly String APPNAME = "MoneyTaker";
-        
 
+        private static String documentPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
+
+        public static readonly String APPNAME = "MoneyTaker";
+        public static readonly String MODEL_PATH = documentPath + "\\MoneyTaker\\data.xml";
     }
 
     public class USERConfig
