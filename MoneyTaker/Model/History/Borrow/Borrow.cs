@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class Borrow
+public class Borrow
 {
     String name;
     int money;

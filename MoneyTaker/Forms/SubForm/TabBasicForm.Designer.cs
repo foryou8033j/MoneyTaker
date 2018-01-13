@@ -166,7 +166,7 @@
             this.btnShowSetting.TabIndex = 0;
             this.btnShowSetting.Text = "▼";
             this.btnShowSetting.UseVisualStyleBackColor = true;
-            this.btnShowSetting.Click += new System.EventHandler(this.btnShowSetting_Click);
+            this.btnShowSetting.MouseEnter += new System.EventHandler(this.btnShowSetting_MouseEnter);
             // 
             // panelSetting
             // 
@@ -176,6 +176,7 @@
             this.panelSetting.Name = "panelSetting";
             this.panelSetting.Size = new System.Drawing.Size(112, 10);
             this.panelSetting.TabIndex = 2;
+            this.panelSetting.MouseLeave += new System.EventHandler(this.panelSetting_MouseLeave);
             // 
             // btnAddDeal
             // 

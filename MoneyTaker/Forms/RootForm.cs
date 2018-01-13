@@ -16,12 +16,15 @@ namespace MoneyTaker
 
         private FormExchangeManager formManager;
         private DBManager dbManager;
+        private Model model;
 
         public RootForm()
         {
             InitializeComponent();
             formManager = new FormExchangeManager(this);
             dbManager = new DBManager();
+            model = new Model();
+
         }
 
         /// <summary>
@@ -49,6 +52,11 @@ namespace MoneyTaker
             return dbManager;
         }
 
+        public Model AccessModel()
+        {
+            return model;
+        }
+
         /// <summary>
         /// RootForm 로드 시 정의되는 로직을 작성합니다.
         /// </summary>
@@ -61,6 +69,8 @@ namespace MoneyTaker
             skinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 
             AccessFormManager().ShowLoginIdForm();
+
+            
 
         }
 
