@@ -153,13 +153,13 @@ namespace MoneyTaker
             AddPanel(tabSettingForm);
         }
 
-        public void ShowPlusFriendForm()
+        public void ShowAddFriendForm()
         {
-            PlusFriendForm plusFriendForm = new PlusFriendForm();
-            plusFriendForm.SetFormManager(this);
-            plusFriendForm.TopLevel = false;
+            AddFriendForm addFriendForm = new AddFriendForm();
+            addFriendForm.SetFormManager(this);
+            addFriendForm.TopLevel = false;
 
-            AddPanel(plusFriendForm);
+            AddPanel(addFriendForm);
         }
 
         public void ShowFindIdForm()

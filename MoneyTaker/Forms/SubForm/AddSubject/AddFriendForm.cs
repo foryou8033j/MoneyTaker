@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace MoneyTaker
 {
-    public partial class PlusFriendForm : Form
+    public partial class AddFriendForm : Form
     {
         private FormExchangeManager formManager;
 
-        public PlusFriendForm()
+        public AddFriendForm()
         {
             InitializeComponent();
         }

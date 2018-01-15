@@ -115,7 +115,7 @@ namespace MoneyTaker
         {
             await Task.Delay(150);
 
-            formManager.ShowPlusFriendForm();
+            formManager.ShowAddFriendForm();
         }
 
         private void btnShowSetting_Click(object sender, EventArgs e)

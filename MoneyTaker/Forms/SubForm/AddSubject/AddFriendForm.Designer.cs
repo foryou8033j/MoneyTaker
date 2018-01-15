@@ -1,6 +1,6 @@
 ﻿namespace MoneyTaker
 {
-    partial class PlusFriendForm
+    partial class AddFriendForm
     {
         /// <summary>
         /// Required designer variable.

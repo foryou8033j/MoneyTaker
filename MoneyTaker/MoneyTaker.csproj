@@ -122,11 +122,11 @@
     <Compile Include="Forms\SubForm\History\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SubForm\Plus\PlusFriendForm.cs">
+    <Compile Include="Forms\SubForm\AddSubject\AddFriendForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SubForm\Plus\PlusFriendForm.Designer.cs">
-      <DependentUpon>PlusFriendForm.cs</DependentUpon>
+    <Compile Include="Forms\SubForm\AddSubject\AddFriendForm.Designer.cs">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SubForm\TabBasicForm.cs">
       <SubType>Form</SubType>
@@ -194,8 +194,8 @@
     <EmbeddedResource Include="Forms\SubForm\History\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SubForm\Plus\PlusFriendForm.resx">
-      <DependentUpon>PlusFriendForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\AddFriendForm.resx">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\TabBasicForm.resx">
       <DependentUpon>TabBasicForm.cs</DependentUpon>
