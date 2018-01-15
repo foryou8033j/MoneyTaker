@@ -41,7 +41,8 @@
             this.SuspendLayout();
             // 
             // BuscarData
-            // 
+            //
+            this.BuscarData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BuscarData_MouseUp);
             this.BuscarData.AllowUserToResizeColumns = false;
             this.BuscarData.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
@@ -93,21 +94,21 @@
             this.BuscarMoney.HeaderText = "금액";
             this.BuscarMoney.Name = "BuscarMoney";
             this.BuscarMoney.ReadOnly = true;
-            this.BuscarMoney.Width = 120;
+            this.BuscarMoney.Width = 70;
             // 
             // BuscarDate
             // 
             this.BuscarDate.HeaderText = "빌린 날짜";
             this.BuscarDate.Name = "BuscarDate";
             this.BuscarDate.ReadOnly = true;
-            this.BuscarDate.Width = 150;
+            this.BuscarDate.Width = 175;
             // 
             // BuscarDday
             // 
             this.BuscarDday.HeaderText = "기한";
             this.BuscarDday.Name = "BuscarDday";
             this.BuscarDday.ReadOnly = true;
-            this.BuscarDday.Width = 150;
+            this.BuscarDday.Width = 175;
             // 
             // BuscarMemo
             // 

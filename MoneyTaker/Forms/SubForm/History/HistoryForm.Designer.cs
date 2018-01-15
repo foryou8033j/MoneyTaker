@@ -43,6 +43,7 @@
             // 
             // HistoryData
             // 
+            this.HistoryData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HistoryData_MouseUp);
             this.HistoryData.AllowUserToResizeColumns = false;
             this.HistoryData.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
@@ -89,6 +90,7 @@
             this.HistoryBuscar.HeaderText = "빌린 사람";
             this.HistoryBuscar.Name = "HistoryBuscar";
             this.HistoryBuscar.ReadOnly = true;
+            this.HistoryBuscar.Width = 90;
             // 
             // HistoryBorrow
             // 
@@ -101,26 +103,28 @@
             this.HistoryMoney.HeaderText = "금액";
             this.HistoryMoney.Name = "HistoryMoney";
             this.HistoryMoney.ReadOnly = true;
+            this.HistoryMoney.Width = 70;
             // 
             // HistoryDate
             // 
             this.HistoryDate.HeaderText = "빌린/빌려준 날짜";
             this.HistoryDate.Name = "HistoryDate";
             this.HistoryDate.ReadOnly = true;
-            this.HistoryDate.Width = 132;
+            this.HistoryDate.Width = 157;
             // 
             // HistoryEnd
             // 
             this.HistoryEnd.HeaderText = "갚은 날짜";
             this.HistoryEnd.Name = "HistoryEnd";
             this.HistoryEnd.ReadOnly = true;
+            this.HistoryEnd.Width = 125;
             // 
             // HistoryMemo
             // 
             this.HistoryMemo.HeaderText = "메모";
             this.HistoryMemo.Name = "HistoryMemo";
             this.HistoryMemo.ReadOnly = true;
-            this.HistoryMemo.Width = 130;
+            this.HistoryMemo.Width = 120;
             // 
             // HistoryForm
             // 
@@ -132,6 +136,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HistoryForm";
             this.Text = "HistoryForm";
+            this.Load += new System.EventHandler(this.HistoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HistoryData)).EndInit();
             this.ResumeLayout(false);
 

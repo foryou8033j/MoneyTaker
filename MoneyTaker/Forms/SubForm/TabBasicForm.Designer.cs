@@ -212,7 +212,7 @@
             this.btnSettingFriend.Primary = true;
             this.btnSettingFriend.Size = new System.Drawing.Size(112, 23);
             this.btnSettingFriend.TabIndex = 0;
-            this.btnSettingFriend.Text = "설정";
+            this.btnSettingFriend.Text = "내 정보";
             this.btnSettingFriend.UseVisualStyleBackColor = true;
             this.btnSettingFriend.Click += new System.EventHandler(this.btnSettingFriend_ClickAsync);
             // 

@@ -28,30 +28,13 @@ namespace MoneyTaker
         {
             for (Width = 0; Width < 700; Width += 50)
                 await Task.Delay(1);
-
-            string[] data = { "오프라인", "온라인" };
-
-            this.cbMode.Items.AddRange(data);
-            this.cbMode.SelectedIndex = 0;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             formManager.ShowTabBasicForm();
         }
-
-        private void cbMode_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (this.cbMode.SelectedIndex == 0)
-            {
-                this.tbName.Hint = "이름";
-            }
-            else
-            {
-                this.tbName.Hint = "이름 / 태그 / 이메일";
-            }
-        }
-
+        
         private void btnOk_Click(object sender, EventArgs e)
         {
             formManager.GetRootFormClass().AccessModel().Friends.Add(new Friend(tbName.Text));
