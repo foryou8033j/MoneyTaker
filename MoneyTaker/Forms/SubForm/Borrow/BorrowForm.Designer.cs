@@ -42,6 +42,7 @@
             // 
             // BorrowData
             // 
+            this.BorrowData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BorrowData_MouseUp);
             this.BorrowData.AllowUserToResizeColumns = false;
             this.BorrowData.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
@@ -93,21 +94,21 @@
             this.BorrowMoney.HeaderText = "금액";
             this.BorrowMoney.Name = "BorrowMoney";
             this.BorrowMoney.ReadOnly = true;
-            this.BorrowMoney.Width = 120;
+            this.BorrowMoney.Width = 70;
             // 
             // BorrowDate
             // 
             this.BorrowDate.HeaderText = "빌려준 날짜";
             this.BorrowDate.Name = "BorrowDate";
             this.BorrowDate.ReadOnly = true;
-            this.BorrowDate.Width = 150;
+            this.BorrowDate.Width = 175;
             // 
             // BorrowDday
             // 
             this.BorrowDday.HeaderText = "기한";
             this.BorrowDday.Name = "BorrowDday";
             this.BorrowDday.ReadOnly = true;
-            this.BorrowDday.Width = 150;
+            this.BorrowDday.Width = 175;
             // 
             // BorrowMemo
             // 

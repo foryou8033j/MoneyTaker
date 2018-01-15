@@ -34,6 +34,9 @@
             this.lbUserMail = new System.Windows.Forms.Label();
             this.lbUserTag = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
+            this.btnNameChange = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnReset = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnLogout = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
             // lbName
@@ -102,12 +105,63 @@
             this.lbUserName.TabIndex = 5;
             this.lbUserName.Text = "이름 넣는 곳";
             // 
+            // btnNameChange
+            // 
+            this.btnNameChange.AutoSize = true;
+            this.btnNameChange.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNameChange.Depth = 0;
+            this.btnNameChange.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnNameChange.Location = new System.Drawing.Point(486, 19);
+            this.btnNameChange.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnNameChange.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNameChange.Name = "btnNameChange";
+            this.btnNameChange.Primary = false;
+            this.btnNameChange.Size = new System.Drawing.Size(93, 36);
+            this.btnNameChange.TabIndex = 6;
+            this.btnNameChange.Text = "이  름  변  경";
+            this.btnNameChange.UseVisualStyleBackColor = true;
+            // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = true;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.Depth = 0;
+            this.btnReset.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnReset.Location = new System.Drawing.Point(486, 93);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Primary = false;
+            this.btnReset.Size = new System.Drawing.Size(85, 36);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "초    기    화";
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.AutoSize = true;
+            this.btnLogout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLogout.Depth = 0;
+            this.btnLogout.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnLogout.Location = new System.Drawing.Point(486, 171);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnLogout.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Primary = false;
+            this.btnLogout.Size = new System.Drawing.Size(93, 36);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "로  그  아  웃";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            // 
             // MyInforForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(686, 228);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnNameChange);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.lbUserTag);
             this.Controls.Add(this.lbUserMail);
@@ -130,5 +184,8 @@
         private System.Windows.Forms.Label lbUserMail;
         private System.Windows.Forms.Label lbUserTag;
         private System.Windows.Forms.Label lbUserName;
+        private MaterialSkin.Controls.MaterialFlatButton btnNameChange;
+        private MaterialSkin.Controls.MaterialFlatButton btnReset;
+        private MaterialSkin.Controls.MaterialFlatButton btnLogout;
     }
 }

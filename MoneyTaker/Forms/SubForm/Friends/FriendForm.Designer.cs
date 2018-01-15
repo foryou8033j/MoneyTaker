@@ -79,13 +79,14 @@
             this.FriendData.RowTemplate.Height = 23;
             this.FriendData.Size = new System.Drawing.Size(703, 237);
             this.FriendData.TabIndex = 0;
+            this.FriendData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FriendData_MouseUp);
             // 
             // FriendGroup
             // 
             this.FriendGroup.HeaderText = "그룹";
             this.FriendGroup.Name = "FriendGroup";
             this.FriendGroup.ReadOnly = true;
-            this.FriendGroup.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FriendGroup.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FriendGroup.Width = 160;
             // 
             // FriendName
@@ -93,6 +94,7 @@
             this.FriendName.HeaderText = "이름";
             this.FriendName.Name = "FriendName";
             this.FriendName.ReadOnly = true;
+            this.FriendName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FriendName.Width = 160;
             // 
             // FriendEmail
@@ -100,6 +102,7 @@
             this.FriendEmail.HeaderText = "이메일";
             this.FriendEmail.Name = "FriendEmail";
             this.FriendEmail.ReadOnly = true;
+            this.FriendEmail.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FriendEmail.Width = 182;
             // 
             // FriendCredit
@@ -107,6 +110,7 @@
             this.FriendCredit.HeaderText = "신용도";
             this.FriendCredit.Name = "FriendCredit";
             this.FriendCredit.ReadOnly = true;
+            this.FriendCredit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.FriendCredit.Width = 160;
             // 
             // FriendForm

@@ -41,7 +41,7 @@
             // 
             this.tabTradeSelecter.BaseTabControl = this.tabControlTrade;
             this.tabTradeSelecter.Depth = 0;
-            this.tabTradeSelecter.Font = new System.Drawing.Font("배달의민족 주아", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tabTradeSelecter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tabTradeSelecter.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabTradeSelecter.Location = new System.Drawing.Point(1, 0);
             this.tabTradeSelecter.MouseState = MaterialSkin.MouseState.HOVER;
@@ -80,7 +80,7 @@
             this.tabPageBuscar.Location = new System.Drawing.Point(4, 22);
             this.tabPageBuscar.Name = "tabPageBuscar";
             this.tabPageBuscar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBuscar.Size = new System.Drawing.Size(690, 254);
+            this.tabPageBuscar.Size = new System.Drawing.Size(690, 0);
             this.tabPageBuscar.TabIndex = 1;
             this.tabPageBuscar.Text = "빌려주기";
             // 

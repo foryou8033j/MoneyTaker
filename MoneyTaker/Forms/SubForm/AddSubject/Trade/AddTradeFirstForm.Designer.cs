@@ -42,7 +42,7 @@
             // tbName
             // 
             this.tbName.Depth = 0;
-            this.tbName.Font = new System.Drawing.Font("배달의민족 주아", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tbName.Hint = "이름 입력";
             this.tbName.Location = new System.Drawing.Point(195, 56);
             this.tbName.MouseState = MaterialSkin.MouseState.HOVER;
@@ -76,10 +76,10 @@
             this.lbnName.Depth = 0;
             this.lbnName.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbnName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbnName.Location = new System.Drawing.Point(158, 56);
+            this.lbnName.Location = new System.Drawing.Point(150, 56);
             this.lbnName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnName.Name = "lbnName";
-            this.lbnName.Size = new System.Drawing.Size(31, 19);
+            this.lbnName.Size = new System.Drawing.Size(39, 19);
             this.lbnName.TabIndex = 3;
             this.lbnName.Text = "이름";
             // 
@@ -91,7 +91,7 @@
             this.lbnFriendList.Location = new System.Drawing.Point(191, 78);
             this.lbnFriendList.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnFriendList.Name = "lbnFriendList";
-            this.lbnFriendList.Size = new System.Drawing.Size(331, 23);
+            this.lbnFriendList.Size = new System.Drawing.Size(430, 23);
             this.lbnFriendList.TabIndex = 4;
             this.lbnFriendList.Text = "이름을 입력하고 Enter 를 입력하면 여러명을 등록할 수 있어요";
             // 
@@ -101,17 +101,17 @@
             this.lbnPrice.Depth = 0;
             this.lbnPrice.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbnPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbnPrice.Location = new System.Drawing.Point(158, 125);
+            this.lbnPrice.Location = new System.Drawing.Point(150, 125);
             this.lbnPrice.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbnPrice.Name = "lbnPrice";
-            this.lbnPrice.Size = new System.Drawing.Size(31, 19);
+            this.lbnPrice.Size = new System.Drawing.Size(39, 19);
             this.lbnPrice.TabIndex = 5;
             this.lbnPrice.Text = "금액";
             // 
             // materialSingleLineTextField1
             // 
             this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Font = new System.Drawing.Font("배달의민족 주아", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.materialSingleLineTextField1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.materialSingleLineTextField1.Hint = "금액 입력";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(195, 125);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;

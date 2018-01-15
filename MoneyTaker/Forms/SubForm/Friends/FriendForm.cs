@@ -41,5 +41,46 @@ namespace MoneyTaker
                 FriendData.Rows.Add(row);
             }
         }
+        
+        private void FriendData_MouseUp(object sender, MouseEventArgs e)
+        {
+            DataGridView.HitTestInfo hitTestInfo;
+
+            if(e.Button == MouseButtons.Right)
+            {
+                hitTestInfo = FriendData.HitTest(e.X, e.Y);
+
+                int col = hitTestInfo.ColumnIndex;
+                int row = hitTestInfo.RowIndex;
+
+                if (col < 0) col = 0;
+                if (row < 0) row = 0;
+
+                this.FriendData.CurrentCell = this.FriendData[col, row];
+
+                ContextMenuStrip menu = new ContextMenuStrip();
+
+                menu.Items.Add("수    정");
+                menu.Items.Add("삭    제");
+
+                menu.ItemClicked += new ToolStripItemClickedEventHandler(FriendMenu_ItemClicked);
+
+                menu.Show(FriendData, new Point(e.X, e.Y));
+            }
+        }
+
+        private void FriendMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            switch(e.ClickedItem.Text)
+            {
+                case"수    정":
+                    MessageBox.Show("수정하겠습니다");
+                    break;
+                case "삭    제":
+                    MessageBox.Show("삭제하겠습니다");
+                    break;
+            }
+        }
+        
     }
 }
