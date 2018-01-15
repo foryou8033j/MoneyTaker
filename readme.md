@@ -1,6 +1,7 @@
 MoneyTaker Project
 =======
 친구, 동료, 가족 사이에 돈을 빌려주고 빌리던 금전관계를 쉽게 관리해주는데 도움을 주는 프로그램입니다.
+
 *It is a program that records transactions that borrow and buscar money among friends, colleagues, and families.*
 
 >이 프로젝트는 금오공과대학교에 재학중인 컴퓨터공학과 학생들이 참여하여 팀 프로젝트 연습삼아 진행 중 입니다.
@@ -15,7 +16,8 @@ MoneyTaker Project
 >* 데이터 자동 동기화
 
 ## 기능 예시
-> 현재 개발중인 이미지 입니다!
+> *현재 개발중인 이미지 입니다!*
+
 ![Register Form](/ReadMeImage/register_1.PNG)
 ![Login ID Form](/ReadMeImage/login_1.PNG)
 ![Login Password Form](/ReadMeImage/login_2.PNG)
@@ -25,7 +27,7 @@ MoneyTaker Project
 ![Add Trade Form](/ReadMeImage/addTrade.PNG).
 
 ## 블로그
-현재 프로젝트는 다음 블로그 AlcoholCoding.com 에도 게시되어 있습니다.
+현재 프로젝트는 다음 블로그 [AlcoholCoding.com]: https://alcoholcoding.com/ 에도 게시되어 있습니다.
 
 ## 프로젝트 진행 연혁
 2017년 12월 26일 ~
