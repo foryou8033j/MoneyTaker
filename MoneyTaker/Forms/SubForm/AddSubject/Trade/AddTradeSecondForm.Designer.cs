@@ -47,7 +47,7 @@
             this.materialLabel1.Location = new System.Drawing.Point(211, 49);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(54, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(42, 19);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "시작일";
             // 
@@ -60,7 +60,7 @@
             this.materialLabel2.Location = new System.Drawing.Point(211, 90);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(54, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(42, 19);
             this.materialLabel2.TabIndex = 1;
             this.materialLabel2.Text = "마감일";
             // 
@@ -96,7 +96,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(331, 127);
+            this.materialLabel3.Location = new System.Drawing.Point(331, 140);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(52, 19);
@@ -107,7 +107,7 @@
             // 
             this.tbMemo.Depth = 0;
             this.tbMemo.Hint = "간단한 메모를 입력하세요";
-            this.tbMemo.Location = new System.Drawing.Point(216, 152);
+            this.tbMemo.Location = new System.Drawing.Point(216, 165);
             this.tbMemo.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbMemo.Name = "tbMemo";
             this.tbMemo.PasswordChar = '\0';

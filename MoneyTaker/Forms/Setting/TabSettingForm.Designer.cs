@@ -105,7 +105,7 @@
             this.lbName.Location = new System.Drawing.Point(186, 58);
             this.lbName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(63, 19);
+            this.lbName.Size = new System.Drawing.Size(55, 19);
             this.lbName.TabIndex = 4;
             this.lbName.Text = "이      름";
             // 
@@ -118,7 +118,7 @@
             this.materialLabel2.Location = new System.Drawing.Point(186, 121);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(63, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(55, 19);
             this.materialLabel2.TabIndex = 5;
             this.materialLabel2.Text = "태      그";
             // 
@@ -131,7 +131,7 @@
             this.materialLabel3.Location = new System.Drawing.Point(186, 190);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(70, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(58, 19);
             this.materialLabel3.TabIndex = 6;
             this.materialLabel3.Text = "이  메  일";
             // 
@@ -209,7 +209,7 @@
             // 
             // tmFunction
             // 
-            this.tmFunction.Interval = 10;
+            this.tmFunction.Interval = 1;
             this.tmFunction.Tick += new System.EventHandler(this.tmFunction_Tick);
             // 
             // TabSettingForm
