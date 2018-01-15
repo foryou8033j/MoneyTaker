@@ -142,6 +142,8 @@ namespace MoneyTaker
         private async void btnAddTrade_Click(object sender, EventArgs e)
         {
             await Task.Delay(150);
+
+            formManager.ShowAddTradeForm();
         }
     }
 }

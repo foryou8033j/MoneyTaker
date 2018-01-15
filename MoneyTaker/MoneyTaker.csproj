@@ -98,6 +98,24 @@
     <Compile Include="Forms\Setting\TabSettingForm.Designer.cs">
       <DependentUpon>TabSettingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddTradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddTradeForm.Designer.cs">
+      <DependentUpon>AddTradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.Designer.cs">
+      <DependentUpon>AddTradeFirstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.Designer.cs">
+      <DependentUpon>AddTradeSecondForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SubForm\Borrow\BorrowForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +199,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Setting\TabSettingForm.resx">
       <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\AddTradeForm.resx">
+      <DependentUpon>AddTradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.resx">
+      <DependentUpon>AddTradeFirstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.resx">
+      <DependentUpon>AddTradeSecondForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\Borrow\BorrowForm.resx">
       <DependentUpon>BorrowForm.cs</DependentUpon>
