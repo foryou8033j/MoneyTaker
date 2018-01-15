@@ -35,6 +35,11 @@ namespace MoneyTaker
 
         private async void TabBasicForm_LoadAsync(object sender, EventArgs e)
         {
+
+            // TabBasicForm 초기화시에 하부 Form을 Load하던것을 LoadAsync 시에 Load 하는것으로 변경
+            // 수정 사유 : FormExchangeManager 객체와 연결이전(SetFormManager 호출 이전) 에 하부 폼에서
+            // Load 할 때 AccessModel() 메소드가 동작하여 NullPointException 발생
+            // Modify : 2018-01-13 서정삼
             ShowFriendForm();
             ShowBuscarForm();
             ShowBorrowForm();
@@ -83,13 +88,6 @@ namespace MoneyTaker
             this.panelHistory.Controls.Add(historyForm);
         }
 
-        private async void btnSettingFriend_ClickAsync(object sender, EventArgs e)
-        {
-            await Task.Delay(150);
-
-            formManager.ShowTabSettingForm();
-        }
-
         private void tmSetting_Tick(object sender, EventArgs e)
         {
             if(panelHide)
@@ -113,21 +111,37 @@ namespace MoneyTaker
                 }
             }
         }
-        private void btnShowSetting_MouseEnter(object sender, EventArgs e)
+        private async void btnAddFriend_Click(object sender, EventArgs e)
         {
-            this.tmSetting.Start();
-            this.btnShowSetting.Text = "▲";
-        }
+            await Task.Delay(150);
 
-        private void panelSetting_MouseLeave(object sender, EventArgs e)
-        {
-            this.tmSetting.Start();
-            this.btnShowSetting.Text = "▼";
-        }
-        private void btnAddFriend_Click(object sender, EventArgs e)
-        {
             formManager.ShowPlusFriendForm();
+        }
 
+        private void btnShowSetting_Click(object sender, EventArgs e)
+        {
+            if (panelHide)
+            {
+                this.tmSetting.Start();
+                this.btnShowSetting.Text = "▲";
+            }
+            else
+            {
+                this.tmSetting.Start();
+                this.btnShowSetting.Text = "▼";
+            }
+        }
+
+        private async void btnSettingFriend_ClickAsync(object sender, EventArgs e)
+        {
+            await Task.Delay(150);
+
+            formManager.ShowTabSettingForm();
+        }
+
+        private async void btnAddTrade_Click(object sender, EventArgs e)
+        {
+            await Task.Delay(150);
         }
     }
 }

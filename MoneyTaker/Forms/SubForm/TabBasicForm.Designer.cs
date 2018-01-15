@@ -41,7 +41,7 @@
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnShowSetting = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panelSetting = new System.Windows.Forms.Panel();
-            this.btnAddDeal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnAddTrade = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnAddFriend = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnSettingFriend = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tmSetting = new System.Windows.Forms.Timer(this.components);
@@ -166,29 +166,29 @@
             this.btnShowSetting.TabIndex = 0;
             this.btnShowSetting.Text = "▼";
             this.btnShowSetting.UseVisualStyleBackColor = true;
-            this.btnShowSetting.MouseEnter += new System.EventHandler(this.btnShowSetting_MouseEnter);
+            this.btnShowSetting.Click += new System.EventHandler(this.btnShowSetting_Click);
             // 
             // panelSetting
             // 
-            this.panelSetting.Controls.Add(this.btnAddDeal);
+            this.panelSetting.Controls.Add(this.btnAddTrade);
             this.panelSetting.Controls.Add(this.btnAddFriend);
             this.panelSetting.Location = new System.Drawing.Point(587, 18);
             this.panelSetting.Name = "panelSetting";
             this.panelSetting.Size = new System.Drawing.Size(112, 10);
             this.panelSetting.TabIndex = 2;
-            this.panelSetting.MouseLeave += new System.EventHandler(this.panelSetting_MouseLeave);
             // 
-            // btnAddDeal
+            // btnAddTrade
             // 
-            this.btnAddDeal.Depth = 0;
-            this.btnAddDeal.Location = new System.Drawing.Point(0, 42);
-            this.btnAddDeal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAddDeal.Name = "btnAddDeal";
-            this.btnAddDeal.Primary = true;
-            this.btnAddDeal.Size = new System.Drawing.Size(112, 23);
-            this.btnAddDeal.TabIndex = 2;
-            this.btnAddDeal.Text = "거래 추가";
-            this.btnAddDeal.UseVisualStyleBackColor = true;
+            this.btnAddTrade.Depth = 0;
+            this.btnAddTrade.Location = new System.Drawing.Point(0, 42);
+            this.btnAddTrade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAddTrade.Name = "btnAddTrade";
+            this.btnAddTrade.Primary = true;
+            this.btnAddTrade.Size = new System.Drawing.Size(112, 23);
+            this.btnAddTrade.TabIndex = 2;
+            this.btnAddTrade.Text = "거래 추가";
+            this.btnAddTrade.UseVisualStyleBackColor = true;
+            this.btnAddTrade.Click += new System.EventHandler(this.btnAddTrade_Click);
             // 
             // btnAddFriend
             // 
@@ -260,7 +260,7 @@
         private System.Windows.Forms.Panel panelBorrow;
         private System.Windows.Forms.Panel panelHistory;
         private System.Windows.Forms.Panel panelSetting;
-        private MaterialSkin.Controls.MaterialRaisedButton btnAddDeal;
+        private MaterialSkin.Controls.MaterialRaisedButton btnAddTrade;
         private MaterialSkin.Controls.MaterialRaisedButton btnAddFriend;
         private MaterialSkin.Controls.MaterialRaisedButton btnSettingFriend;
         private System.Windows.Forms.Timer tmSetting;
