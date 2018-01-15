@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-    class Friend
+    public class Friend
     {
     String name;
     String email;
@@ -24,6 +24,17 @@ using System.Threading.Tasks;
         this.uguid = uguid;
         this.gguid = gguid;
         this.tag = tag;
+    }
+
+    public Friend(string name)
+    {
+        this.name = name;
+        this.email = "";
+        this.group = "";
+        this.credibility = 0;
+        this.uguid = "";
+        this.gguid = "";
+        this.tag = 0;
     }
 
     public string Name { get => name; set => name = value; }

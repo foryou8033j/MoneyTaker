@@ -1,5 +1,5 @@
 ﻿namespace MoneyTaker
-{
+{ 
     partial class TabSettingForm
     {
         /// <summary>
@@ -28,190 +28,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panelSetting1 = new System.Windows.Forms.Panel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panelSetting2 = new System.Windows.Forms.Panel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelSetting3 = new System.Windows.Forms.Panel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelSetting4 = new System.Windows.Forms.Panel();
-            this.btnSettingSetting = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
-            this.materialTabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.tbName = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbTag = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbEmail = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.lbName = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnFunction = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.panelFunction = new System.Windows.Forms.Panel();
+            this.btnLogout = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnNameChange = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnClose = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tmFunction = new System.Windows.Forms.Timer(this.components);
+            this.panelFunction.SuspendLayout();
             this.SuspendLayout();
             // 
-            // materialTabSelector1
+            // tbName
             // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(-1, 0);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(583, 23);
-            this.materialTabSelector1.TabIndex = 1;
-            this.materialTabSelector1.Text = "materialTabSelector1";
+            this.tbName.Depth = 0;
+            this.tbName.Enabled = false;
+            this.tbName.Hint = "이름";
+            this.tbName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tbName.Location = new System.Drawing.Point(264, 57);
+            this.tbName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbName.Name = "tbName";
+            this.tbName.PasswordChar = '\0';
+            this.tbName.SelectedText = "";
+            this.tbName.SelectionLength = 0;
+            this.tbName.SelectionStart = 0;
+            this.tbName.Size = new System.Drawing.Size(244, 23);
+            this.tbName.TabIndex = 1;
+            this.tbName.UseSystemPasswordChar = false;
             // 
-            // materialTabControl1
+            // tbTag
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(12, 28);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(676, 269);
-            this.materialTabControl1.TabIndex = 1;
+            this.tbTag.Depth = 0;
+            this.tbTag.Enabled = false;
+            this.tbTag.Hint = "태그";
+            this.tbTag.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tbTag.Location = new System.Drawing.Point(264, 120);
+            this.tbTag.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbTag.Name = "tbTag";
+            this.tbTag.PasswordChar = '\0';
+            this.tbTag.SelectedText = "";
+            this.tbTag.SelectionLength = 0;
+            this.tbTag.SelectionStart = 0;
+            this.tbTag.Size = new System.Drawing.Size(244, 23);
+            this.tbTag.TabIndex = 2;
+            this.tbTag.UseSystemPasswordChar = false;
             // 
-            // tabPage1
+            // tbEmail
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(668, 243);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "설정1";
+            this.tbEmail.Depth = 0;
+            this.tbEmail.Enabled = false;
+            this.tbEmail.Hint = "이메일";
+            this.tbEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tbEmail.Location = new System.Drawing.Point(264, 189);
+            this.tbEmail.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PasswordChar = '\0';
+            this.tbEmail.SelectedText = "";
+            this.tbEmail.SelectionLength = 0;
+            this.tbEmail.SelectionStart = 0;
+            this.tbEmail.Size = new System.Drawing.Size(244, 23);
+            this.tbEmail.TabIndex = 3;
+            this.tbEmail.UseSystemPasswordChar = false;
             // 
-            // panel4
+            // lbName
             // 
-            this.panel4.Controls.Add(this.panelSetting1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(662, 237);
-            this.panel4.TabIndex = 0;
+            this.lbName.AutoSize = true;
+            this.lbName.Depth = 0;
+            this.lbName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbName.Location = new System.Drawing.Point(186, 58);
+            this.lbName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(55, 19);
+            this.lbName.TabIndex = 4;
+            this.lbName.Text = "이      름";
             // 
-            // panelSetting1
+            // materialLabel2
             // 
-            this.panelSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting1.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting1.Name = "panelSetting1";
-            this.panelSetting1.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting1.TabIndex = 0;
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(186, 121);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(55, 19);
+            this.materialLabel2.TabIndex = 5;
+            this.materialLabel2.Text = "태      그";
             // 
-            // tabPage2
+            // materialLabel3
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.tabPage2.Controls.Add(this.panel3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(668, 243);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "설정2";
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(186, 190);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(58, 19);
+            this.materialLabel3.TabIndex = 6;
+            this.materialLabel3.Text = "이  메  일";
             // 
-            // panel3
+            // btnFunction
             // 
-            this.panel3.Controls.Add(this.panelSetting2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(662, 237);
-            this.panel3.TabIndex = 0;
+            this.btnFunction.Depth = 0;
+            this.btnFunction.Location = new System.Drawing.Point(70, 226);
+            this.btnFunction.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnFunction.Name = "btnFunction";
+            this.btnFunction.Primary = true;
+            this.btnFunction.Size = new System.Drawing.Size(75, 23);
+            this.btnFunction.TabIndex = 7;
+            this.btnFunction.Text = "▶";
+            this.btnFunction.UseVisualStyleBackColor = true;
+            this.btnFunction.Click += new System.EventHandler(this.btnFunction_Click);
             // 
-            // panelSetting2
+            // panelFunction
             // 
-            this.panelSetting2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting2.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting2.Name = "panelSetting2";
-            this.panelSetting2.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting2.TabIndex = 0;
+            this.panelFunction.Controls.Add(this.btnLogout);
+            this.panelFunction.Controls.Add(this.btnReset);
+            this.panelFunction.Controls.Add(this.btnNameChange);
+            this.panelFunction.Location = new System.Drawing.Point(138, 226);
+            this.panelFunction.Name = "panelFunction";
+            this.panelFunction.Size = new System.Drawing.Size(10, 23);
+            this.panelFunction.TabIndex = 8;
             // 
-            // tabPage3
+            // btnLogout
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.tabPage3.Controls.Add(this.panel2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(668, 243);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "설정3";
+            this.btnLogout.Depth = 0;
+            this.btnLogout.Location = new System.Drawing.Point(314, 0);
+            this.btnLogout.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Primary = true;
+            this.btnLogout.Size = new System.Drawing.Size(112, 23);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.Text = "로  그  아  웃";
+            this.btnLogout.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // btnReset
             // 
-            this.panel2.Controls.Add(this.panelSetting3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(662, 237);
-            this.panel2.TabIndex = 0;
+            this.btnReset.Depth = 0;
+            this.btnReset.Location = new System.Drawing.Point(162, 0);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Primary = true;
+            this.btnReset.Size = new System.Drawing.Size(112, 23);
+            this.btnReset.TabIndex = 1;
+            this.btnReset.Text = "초   기   화";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
-            // panelSetting3
+            // btnNameChange
             // 
-            this.panelSetting3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting3.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting3.Name = "panelSetting3";
-            this.panelSetting3.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting3.TabIndex = 0;
+            this.btnNameChange.Depth = 0;
+            this.btnNameChange.Location = new System.Drawing.Point(9, 0);
+            this.btnNameChange.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNameChange.Name = "btnNameChange";
+            this.btnNameChange.Primary = true;
+            this.btnNameChange.Size = new System.Drawing.Size(112, 23);
+            this.btnNameChange.TabIndex = 0;
+            this.btnNameChange.Text = "이  름  변  경";
+            this.btnNameChange.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // btnClose
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(668, 243);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "설정4";
+            this.btnClose.Depth = 0;
+            this.btnClose.Location = new System.Drawing.Point(300, 265);
+            this.btnClose.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Primary = true;
+            this.btnClose.Size = new System.Drawing.Size(112, 23);
+            this.btnClose.TabIndex = 9;
+            this.btnClose.Text = "닫      기";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_ClickAsync);
             // 
-            // panel1
+            // tmFunction
             // 
-            this.panel1.Controls.Add(this.panelSetting4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(662, 237);
-            this.panel1.TabIndex = 0;
-            // 
-            // panelSetting4
-            // 
-            this.panelSetting4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSetting4.Location = new System.Drawing.Point(0, 0);
-            this.panelSetting4.Name = "panelSetting4";
-            this.panelSetting4.Size = new System.Drawing.Size(662, 237);
-            this.panelSetting4.TabIndex = 0;
-            // 
-            // btnSettingSetting
-            // 
-            this.btnSettingSetting.Depth = 0;
-            this.btnSettingSetting.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSettingSetting.Location = new System.Drawing.Point(588, -1);
-            this.btnSettingSetting.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnSettingSetting.Name = "btnSettingSetting";
-            this.btnSettingSetting.Primary = true;
-            this.btnSettingSetting.Size = new System.Drawing.Size(112, 23);
-            this.btnSettingSetting.TabIndex = 2;
-            this.btnSettingSetting.Text = "닫기";
-            this.btnSettingSetting.UseVisualStyleBackColor = true;
-            this.btnSettingSetting.Click += new System.EventHandler(this.btnSettingSetting_Click);
-            // 
-            // mySqlDataAdapter1
-            // 
-            this.mySqlDataAdapter1.DeleteCommand = null;
-            this.mySqlDataAdapter1.InsertCommand = null;
-            this.mySqlDataAdapter1.SelectCommand = null;
-            this.mySqlDataAdapter1.UpdateCommand = null;
+            this.tmFunction.Interval = 1;
+            this.tmFunction.Tick += new System.EventHandler(this.tmFunction_Tick);
             // 
             // TabSettingForm
             // 
@@ -219,43 +218,38 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(700, 310);
-            this.Controls.Add(this.btnSettingSetting);
-            this.Controls.Add(this.materialTabControl1);
-            this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.btnFunction);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.panelFunction);
+            this.Controls.Add(this.materialLabel3);
+            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.lbName);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbTag);
+            this.Controls.Add(this.tbName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TabSettingForm";
             this.Text = "TabSettingForm";
             this.Load += new System.EventHandler(this.TabSettingForm_LoadAsync);
-            this.materialTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelFunction.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
-        #endregion
-
-        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private MaterialSkin.Controls.MaterialRaisedButton btnSettingSetting;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelSetting2;
-        private System.Windows.Forms.Panel panelSetting3;
-        private System.Windows.Forms.Panel panelSetting4;
-        private System.Windows.Forms.Panel panelSetting1;
-        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
+    #endregion
+    private MaterialSkin.Controls.MaterialSingleLineTextField tbName;
+    private MaterialSkin.Controls.MaterialSingleLineTextField tbTag;
+    private MaterialSkin.Controls.MaterialSingleLineTextField tbEmail;
+    private MaterialSkin.Controls.MaterialLabel lbName;
+    private MaterialSkin.Controls.MaterialLabel materialLabel2;
+    private MaterialSkin.Controls.MaterialLabel materialLabel3;
+    private MaterialSkin.Controls.MaterialRaisedButton btnFunction;
+    private System.Windows.Forms.Panel panelFunction;
+    private MaterialSkin.Controls.MaterialRaisedButton btnClose;
+    private MaterialSkin.Controls.MaterialRaisedButton btnLogout;
+    private MaterialSkin.Controls.MaterialRaisedButton btnReset;
+    private MaterialSkin.Controls.MaterialRaisedButton btnNameChange;
+    private System.Windows.Forms.Timer tmFunction;
     }
 }

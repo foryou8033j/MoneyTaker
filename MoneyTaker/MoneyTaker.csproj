@@ -38,6 +38,7 @@
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.10.5\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -85,11 +86,35 @@
     <Compile Include="Forms\Login\LoginIdForm.Designer.cs">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Setting\MyInfor\MyInforForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\MyInfor\MyInforForm.Designer.cs">
+      <DependentUpon>MyInforForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Setting\TabSettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Setting\TabSettingForm.Designer.cs">
       <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddTradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddTradeForm.Designer.cs">
+      <DependentUpon>AddTradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.Designer.cs">
+      <DependentUpon>AddTradeFirstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.Designer.cs">
+      <DependentUpon>AddTradeSecondForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SubForm\Borrow\BorrowForm.cs">
       <SubType>Form</SubType>
@@ -114,6 +139,12 @@
     </Compile>
     <Compile Include="Forms\SubForm\History\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForm\AddSubject\AddFriendForm.Designer.cs">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SubForm\TabBasicForm.cs">
       <SubType>Form</SubType>
@@ -146,6 +177,7 @@
     <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\ClarifyManager.cs" />
     <Compile Include="Util\DBManager.cs" />
     <Compile Include="Util\EncryptTool.cs" />
     <Compile Include="Util\MailManager.cs" />
@@ -162,8 +194,20 @@
     <EmbeddedResource Include="Forms\Login\LoginIdForm.resx">
       <DependentUpon>LoginIdForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\MyInfor\MyInforForm.resx">
+      <DependentUpon>MyInforForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Setting\TabSettingForm.resx">
       <DependentUpon>TabSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\AddTradeForm.resx">
+      <DependentUpon>AddTradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\Trade\AddTradeFirstForm.resx">
+      <DependentUpon>AddTradeFirstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\Trade\AddTradeSecondForm.resx">
+      <DependentUpon>AddTradeSecondForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\Borrow\BorrowForm.resx">
       <DependentUpon>BorrowForm.cs</DependentUpon>
@@ -176,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\History\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForm\AddSubject\AddFriendForm.resx">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForm\TabBasicForm.resx">
       <DependentUpon>TabBasicForm.cs</DependentUpon>
@@ -223,9 +270,9 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
+    <None Include="Resources\magnifier.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Setting\NewFolder1\" />
     <Folder Include="Forms\Setting\NewFolder2\" />
     <Folder Include="Forms\Setting\NewFolder3\" />
     <Folder Include="Forms\Setting\NewFolder4\" />

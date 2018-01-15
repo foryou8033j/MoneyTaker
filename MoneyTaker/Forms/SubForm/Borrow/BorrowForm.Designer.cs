@@ -36,11 +36,13 @@
             this.BorrowMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BorrowDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BorrowDday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BorrowMemo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.BorrowData)).BeginInit();
             this.SuspendLayout();
             // 
             // BorrowData
             // 
+            this.BorrowData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BorrowData_MouseUp);
             this.BorrowData.AllowUserToResizeColumns = false;
             this.BorrowData.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
@@ -62,7 +64,8 @@
             this.BorrowName,
             this.BorrowMoney,
             this.BorrowDate,
-            this.BorrowDday});
+            this.BorrowDday,
+            this.BorrowMemo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -75,6 +78,7 @@
             this.BorrowData.EnableHeadersVisualStyles = false;
             this.BorrowData.Location = new System.Drawing.Point(0, 0);
             this.BorrowData.Name = "BorrowData";
+            this.BorrowData.ReadOnly = true;
             this.BorrowData.RowTemplate.Height = 23;
             this.BorrowData.Size = new System.Drawing.Size(703, 237);
             this.BorrowData.TabIndex = 0;
@@ -83,25 +87,35 @@
             // 
             this.BorrowName.HeaderText = "빌려준 사람";
             this.BorrowName.Name = "BorrowName";
-            this.BorrowName.Width = 120;
+            this.BorrowName.ReadOnly = true;
             // 
             // BorrowMoney
             // 
             this.BorrowMoney.HeaderText = "금액";
             this.BorrowMoney.Name = "BorrowMoney";
-            this.BorrowMoney.Width = 120;
+            this.BorrowMoney.ReadOnly = true;
+            this.BorrowMoney.Width = 70;
             // 
             // BorrowDate
             // 
             this.BorrowDate.HeaderText = "빌려준 날짜";
             this.BorrowDate.Name = "BorrowDate";
-            this.BorrowDate.Width = 210;
+            this.BorrowDate.ReadOnly = true;
+            this.BorrowDate.Width = 175;
             // 
             // BorrowDday
             // 
             this.BorrowDday.HeaderText = "기한";
             this.BorrowDday.Name = "BorrowDday";
-            this.BorrowDday.Width = 210;
+            this.BorrowDday.ReadOnly = true;
+            this.BorrowDday.Width = 175;
+            // 
+            // BorrowMemo
+            // 
+            this.BorrowMemo.HeaderText = "메모";
+            this.BorrowMemo.Name = "BorrowMemo";
+            this.BorrowMemo.ReadOnly = true;
+            this.BorrowMemo.Width = 142;
             // 
             // BorrowForm
             // 
@@ -113,6 +127,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BorrowForm";
             this.Text = "BorrowForm";
+            this.Load += new System.EventHandler(this.BorrowForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BorrowData)).EndInit();
             this.ResumeLayout(false);
 
@@ -125,5 +140,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowMoney;
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowDday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowMemo;
     }
 }

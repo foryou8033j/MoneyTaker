@@ -56,7 +56,7 @@ namespace MoneyTaker
         {
             if(tbEmail.Text.Length > 8)
             {
-                if (formManager.GetRootFormClass().AccessDBManager().ExistUserEmail(tbEmail.Text))
+                if (ClarifyManager.IsEmail(tbEmail.Text) && formManager.GetRootFormClass().AccessDBManager().ExistUserEmail(tbEmail.Text))
                 {
                     USERConfig.EMAIL = tbEmail.Text;
                     formManager.ShowLoginPassForm();

@@ -36,11 +36,13 @@
             this.BuscarMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuscarDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuscarDday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BuscarMemo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.BuscarData)).BeginInit();
             this.SuspendLayout();
             // 
             // BuscarData
-            // 
+            //
+            this.BuscarData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BuscarData_MouseUp);
             this.BuscarData.AllowUserToResizeColumns = false;
             this.BuscarData.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
@@ -62,7 +64,8 @@
             this.BuscarName,
             this.BuscarMoney,
             this.BuscarDate,
-            this.BuscarDday});
+            this.BuscarDday,
+            this.BuscarMemo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -75,6 +78,7 @@
             this.BuscarData.EnableHeadersVisualStyles = false;
             this.BuscarData.Location = new System.Drawing.Point(0, 0);
             this.BuscarData.Name = "BuscarData";
+            this.BuscarData.ReadOnly = true;
             this.BuscarData.RowTemplate.Height = 23;
             this.BuscarData.Size = new System.Drawing.Size(703, 237);
             this.BuscarData.TabIndex = 0;
@@ -83,25 +87,35 @@
             // 
             this.BuscarName.HeaderText = "빌린 사람";
             this.BuscarName.Name = "BuscarName";
-            this.BuscarName.Width = 120;
+            this.BuscarName.ReadOnly = true;
             // 
             // BuscarMoney
             // 
             this.BuscarMoney.HeaderText = "금액";
             this.BuscarMoney.Name = "BuscarMoney";
-            this.BuscarMoney.Width = 120;
+            this.BuscarMoney.ReadOnly = true;
+            this.BuscarMoney.Width = 70;
             // 
             // BuscarDate
             // 
             this.BuscarDate.HeaderText = "빌린 날짜";
             this.BuscarDate.Name = "BuscarDate";
-            this.BuscarDate.Width = 210;
+            this.BuscarDate.ReadOnly = true;
+            this.BuscarDate.Width = 175;
             // 
             // BuscarDday
             // 
             this.BuscarDday.HeaderText = "기한";
             this.BuscarDday.Name = "BuscarDday";
-            this.BuscarDday.Width = 210;
+            this.BuscarDday.ReadOnly = true;
+            this.BuscarDday.Width = 175;
+            // 
+            // BuscarMemo
+            // 
+            this.BuscarMemo.HeaderText = "메모";
+            this.BuscarMemo.Name = "BuscarMemo";
+            this.BuscarMemo.ReadOnly = true;
+            this.BuscarMemo.Width = 142;
             // 
             // BuscarForm
             // 
@@ -113,6 +127,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BuscarForm";
             this.Text = "BuscarForm";
+            this.Load += new System.EventHandler(this.BuscarForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BuscarData)).EndInit();
             this.ResumeLayout(false);
 
@@ -125,5 +140,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BuscarMoney;
         private System.Windows.Forms.DataGridViewTextBoxColumn BuscarDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BuscarDday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BuscarMemo;
     }
 }

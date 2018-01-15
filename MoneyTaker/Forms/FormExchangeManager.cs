@@ -153,9 +153,27 @@ namespace MoneyTaker
             AddPanel(tabSettingForm);
         }
 
+        public void ShowAddFriendForm()
+        {
+            AddFriendForm addFriendForm = new AddFriendForm();
+            addFriendForm.SetFormManager(this);
+            addFriendForm.TopLevel = false;
+
+            AddPanel(addFriendForm);
+        }
+
+        public void ShowAddTradeForm()
+        {
+            AddTradeForm addTradeForm = new AddTradeForm();
+            addTradeForm.SetFormManager(this);
+            addTradeForm.TopLevel = false;
+
+            AddPanel(addTradeForm);
+        }
+
         public void ShowFindIdForm()
         {
-
+            
         }
 
         public void ShowFindPasswordForm()
